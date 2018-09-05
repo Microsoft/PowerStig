@@ -132,10 +132,10 @@ function Get-RegistryPathFromWindowsStig
                 Write-Verbose -Message "[$($MyInvocation.MyCommand.Name)] Fixed Leading Backslash : $path"
             }
 
-            # There is an edge case where the STIG has a typo and the path is writen with a space after \SOFTWARE\  (V-68819)
-            if  ($path -match '\sP' )
+            # There is an edge case where the STIG has a typo and the path is written with a space after \SOFTWARE\  (V-68819)
+            if  ($path -match '\\\sP' )
             {
-                $path = $path -replace '\s'
+                $path = $path -replace '\\\sP', '\P'
             }
             $result += $path
         }
