@@ -133,7 +133,7 @@ function Get-RegistryPathFromWindowsStig
             }
 
             # There is an edge case where the STIG has a typo and the path is written with a space after \SOFTWARE\  (V-68819)
-            if  ($path -match '\\\sP.+\' )
+            if  ($path -match '\\\sP.+\\')
             {
                 $path = $path -replace '\\\sP', '\P'
             }
