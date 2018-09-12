@@ -718,7 +718,7 @@ Criteria: If the value DisableUnsafeLocationsInPV is REG_DWORD = 0, this is not 
     <Rule id="V-26616.a" severity="medium" conversionstatus="pass" title="DTOO292 - Set document behavior " dscresource="xRegistry">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
-      <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\excel\security\filevalidation\OpenInProtectedView is set to REG_DWORD = 1</Key>
+      <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\excel\security\filevalidation</Key>
       <OrganizationValueRequired>False</OrganizationValueRequired>
       <OrganizationValueTestString />
       <RawString>HKCU\Software\Policies\Microsoft\Office\15.0\excel\security\filevalidation\OpenInProtectedView is set to REG_DWORD = 1</RawString>
@@ -729,7 +729,7 @@ Criteria: If the value DisableUnsafeLocationsInPV is REG_DWORD = 0, this is not 
     <Rule id="V-26616.b" severity="medium" conversionstatus="pass" title="DTOO292 - Set document behavior " dscresource="xRegistry">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
-      <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\excel\security\filevalidation\DisableEditFromPV is set to REG_DWORD = 1, this is not a finding</Key>
+      <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\excel\security\filevalidation</Key>
       <OrganizationValueRequired>False</OrganizationValueRequired>
       <OrganizationValueTestString />
       <RawString>HKCU\Software\Policies\Microsoft\Office\15.0\excel\security\filevalidation\DisableEditFromPV is set to REG_DWORD = 1, this is not a finding.</RawString>
