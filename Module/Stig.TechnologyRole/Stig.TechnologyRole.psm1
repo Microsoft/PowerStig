@@ -142,3 +142,4 @@ Foreach ($supportFile in Get-ChildItem -Path $PSScriptRoot -Exclude $exclude)
     . $supportFile.FullName
 }
 Export-ModuleMember -Function '*' -Variable '*'
+
