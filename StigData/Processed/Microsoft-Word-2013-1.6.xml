@@ -1,0 +1,609 @@
+<DISASTIG id="Microsoft_Word_2013" version="1.6" created="9/12/2018">
+  <RegistryRule dscresourcemodule="xPSDesiredStateConfiguration">
+    <Rule id="V-17173" severity="medium" conversionstatus="pass" title="DTOO104 - Disable user name and password" dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>False</IsNullOrEmpty>
+      <Key>HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_HTTP_USERNAME_PASSWORD_DISABLE</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>Verify the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Office 2013 (Machine) -&gt; Security Settings -&gt; IE Security "Disable user name and password" is set to "Enabled" and a check in the 'winword.exe' check box is selected.
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKLM\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_HTTP_USERNAME_PASSWORD_DISABLE
+
+Criteria: If the value winword.exe is REG_DWORD = 1, this is not a finding.</RawString>
+      <ValueData>1</ValueData>
+      <ValueName>winword.exe</ValueName>
+      <ValueType>Dword</ValueType>
+    </Rule>
+    <Rule id="V-17174" severity="medium" conversionstatus="pass" title="DTOO111 - Enable IE Bind to Object " dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>False</IsNullOrEmpty>
+      <Key>HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_SAFE_BINDTOOBJECT</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>Verify the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Office 2013 (Machine) -&gt; Security Settings -&gt; IE Security "Bind to Object" is set to "Enabled" and a check in the 'winword.exe' check box is selected.
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKLM\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_SAFE_BINDTOOBJECT
+
+Criteria: If the value winword.exe is REG_DWORD = 1, this is not a finding.</RawString>
+      <ValueData>1</ValueData>
+      <ValueName>winword.exe</ValueName>
+      <ValueType>Dword</ValueType>
+    </Rule>
+    <Rule id="V-17175" severity="medium" conversionstatus="pass" title="DTOO117 - Saved from URL" dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>False</IsNullOrEmpty>
+      <Key>HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_UNC_SAVEDFILECHECK</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>Verify the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Office 2013 (Machine) -&gt; Security Settings -&gt; IE Security "Saved from URL" is set to "Enabled" and a check in the 'winword.exe' check box is selected.
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKLM\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_UNC_SAVEDFILECHECK
+
+Criteria: If the value winword.exe is REG_DWORD = 1, this is not a finding.</RawString>
+      <ValueData>1</ValueData>
+      <ValueName>winword.exe</ValueName>
+      <ValueType>Dword</ValueType>
+    </Rule>
+    <Rule id="V-17183" severity="medium" conversionstatus="pass" title="DTOO123-Block Navigation to URL from Office " dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>False</IsNullOrEmpty>
+      <Key>HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_VALIDATE_NAVIGATE_URL</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>Verify the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Office 2013 (Machine) -&gt; Security Settings -&gt; IE Security "Navigate URL" is set to "Enabled" and a check in the 'winword.exe' check box is selected.
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKLM\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_VALIDATE_NAVIGATE_URL
+
+Criteria: If the value winword.exe is REG_DWORD = 1, this is not a finding.</RawString>
+      <ValueData>1</ValueData>
+      <ValueName>winword.exe</ValueName>
+      <ValueType>Dword</ValueType>
+    </Rule>
+    <Rule id="V-17184" severity="medium" conversionstatus="pass" title="DTOO129 - Block Pop-Ups" dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>False</IsNullOrEmpty>
+      <Key>HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_WEBOC_POPUPMANAGEMENT</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>Verify the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Office 2013 (Machine) -&gt; Security Settings -&gt; IE Security "Block popups" is set to "Enabled" and 'winword.exe' is checked.
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKLM\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_WEBOC_POPUPMANAGEMENT
+
+Criteria: If the value winword.exe is REG_DWORD = 1, this is not a finding.</RawString>
+      <ValueData>1</ValueData>
+      <ValueName>winword.exe</ValueName>
+      <ValueType>Dword</ValueType>
+    </Rule>
+    <Rule id="V-17187" severity="medium" conversionstatus="pass" title="DTOO131 - Trust Bar Notifications" dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>False</IsNullOrEmpty>
+      <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\word\security</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>Verify the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft Word 2013 -&gt; Word Options -&gt; Security -&gt; Trust Center "Disable Trust Bar Notification for unsigned application add-ins and block them" is set to "Enabled".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKCU\Software\Policies\Microsoft\Office\15.0\word\security
+      
+Criteria: If the value NoTBPromptUnsignedAddin is REG_DWORD = 1, this is not a finding.</RawString>
+      <ValueData>1</ValueData>
+      <ValueName>NoTBPromptUnsignedAddin</ValueName>
+      <ValueType>Dword</ValueType>
+    </Rule>
+    <Rule id="V-17471" severity="medium" conversionstatus="pass" title="DTOO133-Disable all trusted locations " dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>False</IsNullOrEmpty>
+      <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\word\security\trusted locations</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>Verify the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft Word 2013 -&gt; Word Options -&gt; Security -&gt; Trust Center -&gt; Trusted Locations "Disable all trusted locations" is set to "Enabled".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKCU\Software\Policies\Microsoft\Office\15.0\word\security\trusted locations
+
+Criteria: If the value AllLocationsDisabled is REG_DWORD = 1, this is not a finding.</RawString>
+      <ValueData>1</ValueData>
+      <ValueName>AllLocationsDisabled</ValueName>
+      <ValueType>Dword</ValueType>
+    </Rule>
+    <Rule id="V-17473" severity="medium" conversionstatus="pass" title="DTOO142 - Force Scan Encr. Macros in open XML" dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>False</IsNullOrEmpty>
+      <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\word\security</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>Verify the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft Word 2013 -&gt; Word Options -&gt; Security -&gt; Trust Center "Scan encrypted macros in Word Open XML documents" is set to "Enabled (Scan encrypted macros (default))".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKCU\Software\Policies\Microsoft\Office\15.0\word\security
+
+Criteria: If the value WordBypassEncryptedMacroScan is REG_DWORD = 0, this is not a finding.</RawString>
+      <ValueData>0</ValueData>
+      <ValueName>WordBypassEncryptedMacroScan</ValueName>
+      <ValueType>Dword</ValueType>
+    </Rule>
+    <Rule id="V-17520" severity="medium" conversionstatus="pass" title="DTOO134 - Trusted locations on computer" dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>False</IsNullOrEmpty>
+      <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\word\security\trusted locations</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>Verify the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft Word 2013 -&gt; Word Options -&gt; Security -&gt; Trust Center -&gt; Trusted Locations "Allow Trusted Locations on the network" is set to "Disabled".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKCU\Software\Policies\Microsoft\Office\15.0\word\security\trusted locations
+
+Criteria: If the value AllowNetworkLocations is REG_DWORD = 0, this is not a finding.</RawString>
+      <ValueData>0</ValueData>
+      <ValueName>AllowNetworkLocations</ValueName>
+      <ValueType>Dword</ValueType>
+    </Rule>
+    <Rule id="V-17521" severity="medium" conversionstatus="pass" title="DTOO139 - Save files default format" dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>True</IsNullOrEmpty>
+      <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\word\options</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>Verify the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft Word 2013 -&gt; Word Options -&gt; Save "default file format" is set to "Enabled Word Document (.docx)". 
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKCU\Software\Policies\Microsoft\Office\15.0\word\options 
+
+Criteria: If the value DefaultFormat is REG_SZ = (blank), this is not a finding.</RawString>
+      <ValueData>
+      </ValueData>
+      <ValueName>DefaultFormat</ValueName>
+      <ValueType>String</ValueType>
+    </Rule>
+    <Rule id="V-17522" severity="medium" conversionstatus="pass" title="DTOO146-Disable Trust access to VB Project Macros" dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>False</IsNullOrEmpty>
+      <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\word\security</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>Verify the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft Word 2013 -&gt; Word Options -&gt; Security -&gt; Trust Center "Trust access to Visual Basic Project" is set to "Disabled".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKCU\Software\Policies\Microsoft\Office\15.0\word\security
+
+Criteria: If the value AccessVBOM is REG_DWORD = 0, this is not a finding.</RawString>
+      <ValueData>0</ValueData>
+      <ValueName>AccessVBOM</ValueName>
+      <ValueType>Dword</ValueType>
+    </Rule>
+    <Rule id="V-17545" severity="medium" conversionstatus="pass" title="DTOO304 - VBA Macro Warning settings" dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>False</IsNullOrEmpty>
+      <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\word\security</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>NOTE: If VBA support is not installed, this check is Not Applicable.
+
+Verify the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft Word 2013 -&gt; Word Options -&gt; Security -&gt; Trust Center "VBA Macro Notification Settings" is set to "Enabled (Disable all with notification)".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKCU\Software\Policies\Microsoft\Office\15.0\word\security
+
+Criteria: If the value VBAWarnings is REG_DWORD = 2, this is not a finding.</RawString>
+      <ValueData>2</ValueData>
+      <ValueName>VBAWarnings</ValueName>
+      <ValueType>Dword</ValueType>
+    </Rule>
+    <Rule id="V-17811" severity="medium" conversionstatus="pass" title="DTOO302 - Don't update Links at Open" dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>False</IsNullOrEmpty>
+      <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\word\options</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>Verify the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft Word 2013 -&gt; Word Options -&gt; Advanced "Update automatic links at Open" is set to "Disabled".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKCU\Software\Policies\Microsoft\Office\15.0\word\options
+
+Criteria: If the value DontUpdateLinks is REG_DWORD = 1, this is not a finding.</RawString>
+      <ValueData>1</ValueData>
+      <ValueName>DontUpdateLinks</ValueName>
+      <ValueType>Dword</ValueType>
+    </Rule>
+    <Rule id="V-17813" severity="medium" conversionstatus="pass" title="DTOO303 - Warn before printing " dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>False</IsNullOrEmpty>
+      <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\word\options</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>Verify the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft Word 2013 -&gt; Word Options -&gt; Security "Warn before printing, saving or sending a file that contains tracked changes or comments" is set to "Enabled".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKCU\Software\Policies\Microsoft\Office\15.0\word\options
+
+Criteria: If the value WarnRevisions is REG_DWORD = 1, this is not a finding</RawString>
+      <ValueData>1</ValueData>
+      <ValueName>WarnRevisions</ValueName>
+      <ValueType>Dword</ValueType>
+    </Rule>
+    <Rule id="V-26584" severity="medium" conversionstatus="pass" title="DTOO126 - Add-on Management" dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>False</IsNullOrEmpty>
+      <Key>HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_ADDON_MANAGEMENT</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>Verify the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Office 2013 (Machine) -&gt; Security Settings -&gt; IE Security "Add-on Management " is set to "Enabled" and 'winword.exe' is checked. 
+
+Procedure: 
+Use the Windows Registry Editor to navigate to the following key:
+
+HKLM\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_ADDON_MANAGEMENT
+
+Criteria: If the value winword.exe is REG_DWORD = 1, this is not a finding.</RawString>
+      <ValueData>1</ValueData>
+      <ValueName>winword.exe</ValueName>
+      <ValueType>Dword</ValueType>
+    </Rule>
+    <Rule id="V-26585" severity="medium" conversionstatus="pass" title="DTOO209 - Zone Elevation Protection" dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>False</IsNullOrEmpty>
+      <Key>HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_ZONE_ELEVATION</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>Verify the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Office 2013 (Machine) -&gt; Security Settings -&gt; IE Security "Protection From Zone Elevation" is set to "Enabled" and 'winword.exe' is checked.
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKLM\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_ZONE_ELEVATION
+
+Criteria: If the value winword.exe is REG_DWORD = 1, this is not a finding.</RawString>
+      <ValueData>1</ValueData>
+      <ValueName>winword.exe</ValueName>
+      <ValueType>Dword</ValueType>
+    </Rule>
+    <Rule id="V-26586" severity="medium" conversionstatus="pass" title="DTOO211 - Restrict ActiveX Install" dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>False</IsNullOrEmpty>
+      <Key>HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_RESTRICT_ACTIVEXINSTALL</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>Verify the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Office 2013 (Machine) -&gt; Security Settings -&gt; IE Security "Restrict ActiveX Install" is set to "Enabled" and 'winword.exe' is checked.
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKLM\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_RESTRICT_ACTIVEXINSTALL
+
+Criteria: If the value winword.exe is REG_DWORD = 1, this is not a finding.</RawString>
+      <ValueData>1</ValueData>
+      <ValueName>winword.exe</ValueName>
+      <ValueType>Dword</ValueType>
+    </Rule>
+    <Rule id="V-26587" severity="medium" conversionstatus="pass" title="DTOO132 - Restrict File Download" dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>False</IsNullOrEmpty>
+      <Key>HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_RESTRICT_FILEDOWNLOAD</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>Verify the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Office 2013 (Machine) -&gt; Security Settings -&gt; IE Security "Restrict File Download" is set to "Enabled" and 'winword.exe' is checked.
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKLM\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_RESTRICT_FILEDOWNLOAD
+
+Criteria: If the value winword.exe is REG_DWORD = 1, this is not a finding.</RawString>
+      <ValueData>1</ValueData>
+      <ValueName>winword.exe</ValueName>
+      <ValueType>Dword</ValueType>
+    </Rule>
+    <Rule id="V-26588" severity="medium" conversionstatus="pass" title="DTOO124 - Scripted Window Security" dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>False</IsNullOrEmpty>
+      <Key>HKEY_LOCAL_MACHINE\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_WINDOW_RESTRICTIONS</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>Verify the policy value for Computer Configuration -&gt; Administrative Templates -&gt; Microsoft Office 2013 (Machine) -&gt; Security Settings -&gt; IE Security "Scripted Window Security Restrictions" is set to "Enabled" and 'winword.exe' is checked.
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKLM\Software\Microsoft\Internet Explorer\Main\FeatureControl\FEATURE_WINDOW_RESTRICTIONS
+
+Criteria: If the value winword.exe is REG_DWORD = 1, this is not a finding.</RawString>
+      <ValueData>1</ValueData>
+      <ValueName>winword.exe</ValueName>
+      <ValueType>Dword</ValueType>
+    </Rule>
+    <Rule id="V-26589" severity="medium" conversionstatus="pass" title="DTOO127 - Add-ins are signed by Trusted Publisher" dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>False</IsNullOrEmpty>
+      <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\word\security</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>Verify the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft Word 2013 -&gt; Word Options -&gt; Security -&gt; Trust Center "Require that application add-ins are signed by Trusted Publisher" is set to "Enabled".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKCU\Software\Policies\Microsoft\Office\15.0\word\security
+
+Criteria: If the value RequireAddinSig is REG_DWORD = 1, this is not a finding.</RawString>
+      <ValueData>1</ValueData>
+      <ValueName>RequireAddinSig</ValueName>
+      <ValueType>Dword</ValueType>
+    </Rule>
+    <Rule id="V-26592" severity="medium" conversionstatus="pass" title="DTOO119 - Turn off file validation" dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>False</IsNullOrEmpty>
+      <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\word\security\filevalidation</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>Verify the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft Word 2013 -&gt; Word Options -&gt; Security "Turn off file validation" is set to "Disabled".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKCU\Software\Policies\Microsoft\Office\15.0\word\security\filevalidation
+
+Criteria: If the value EnableOnLoad is REG_DWORD = 1, this is not a finding.</RawString>
+      <ValueData>1</ValueData>
+      <ValueName>EnableOnLoad</ValueName>
+      <ValueType>Dword</ValueType>
+    </Rule>
+    <Rule id="V-26612" severity="medium" conversionstatus="pass" title="DTOO110 - Set default file block behavior" dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>False</IsNullOrEmpty>
+      <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\word\security\fileblock</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>Verify the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft Word 2013 -&gt; Word Options -&gt; Security -&gt; Trust Center -&gt; File Block Settings "Set default file block behavior" is set to "Enabled: Blocked files are not opened".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKCU\Software\Policies\Microsoft\Office\15.0\word\security\fileblock
+
+Criteria: If the value OpenInProtectedView is REG_DWORD = 0, this is not a finding.</RawString>
+      <ValueData>0</ValueData>
+      <ValueName>OpenInProtectedView</ValueName>
+      <ValueType>Dword</ValueType>
+    </Rule>
+    <Rule id="V-26614" severity="medium" conversionstatus="pass" title="DTOO121 - Files from the Internet zone " dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>False</IsNullOrEmpty>
+      <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\word\security\protectedview</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>Verify the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft Word 2013 -&gt; Word Options -&gt; Security -&gt; Trust Center -&gt; Protected View "Do not open files from the Internet zone in Protected View" is set to "Disabled". 
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKCU\Software\Policies\Microsoft\Office\15.0\word\security\protectedview
+
+Criteria: If the value DisableInternetFilesInPV is REG_DWORD = 0, this is not a finding.</RawString>
+      <ValueData>0</ValueData>
+      <ValueName>DisableInternetFilesInPV</ValueName>
+      <ValueType>Dword</ValueType>
+    </Rule>
+    <Rule id="V-26615" severity="medium" conversionstatus="pass" title="DTOO288 - Files in unsafe locations " dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>False</IsNullOrEmpty>
+      <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\word\security\protectedview</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>Verify the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft Word 2013 -&gt; Word Options -&gt; Security -&gt; Trust Center -&gt; Protected View "Do not open files in unsafe locations in Protected View" is set to "Disabled".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKCU\Software\Policies\Microsoft\Office\15.0\word\security\protectedview 
+
+Criteria: If the value DisableUnsafeLocationsInPV is REG_DWORD = 0, this is not a finding.</RawString>
+      <ValueData>0</ValueData>
+      <ValueName>DisableUnsafeLocationsInPV</ValueName>
+      <ValueType>Dword</ValueType>
+    </Rule>
+    <Rule id="V-26616.a" severity="medium" conversionstatus="pass" title="DTOO292 - Set document behavior " dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>False</IsNullOrEmpty>
+      <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\word\security\filevalidation\OpenInProtectedView is set to REG_DWORD = 1</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>HKCU\Software\Policies\Microsoft\Office\15.0\word\security\filevalidation\OpenInProtectedView is set to REG_DWORD = 1</RawString>
+      <ValueData>1</ValueData>
+      <ValueName>OpenInProtectedView</ValueName>
+      <ValueType>Dword</ValueType>
+    </Rule>
+    <Rule id="V-26616.b" severity="medium" conversionstatus="pass" title="DTOO292 - Set document behavior " dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>False</IsNullOrEmpty>
+      <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\word\security\filevalidation\DisableEditFromPV is set to REG_DWORD = 1, this is not a finding</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>HKCU\Software\Policies\Microsoft\Office\15.0\word\security\filevalidation\DisableEditFromPV is set to REG_DWORD = 1, this is not a finding.</RawString>
+      <ValueData>1</ValueData>
+      <ValueName>DisableEditFromPV</ValueName>
+      <ValueType>Dword</ValueType>
+    </Rule>
+    <Rule id="V-26617" severity="medium" conversionstatus="pass" title="DTOO293 - Turn off Protected View for attachments" dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>False</IsNullOrEmpty>
+      <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\word\security\protectedview</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>Verify the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft Word 2013 -&gt; Word Options -&gt; Security -&gt; Trust Center -&gt; Protected View "Turn off Protected View for attachments opened from Outlook" is set to "Disabled".
+
+Procedure: Use the Windows Registry Editor to navigate to the following keys: 
+
+HKCU\Software\Policies\Microsoft\Office\15.0\word\security\protectedview
+
+Criteria: If the value DisableAttachmentsInPV is REG_DWORD = 0, this is not a finding.</RawString>
+      <ValueData>0</ValueData>
+      <ValueName>DisableAttachmentsInPV</ValueName>
+      <ValueType>Dword</ValueType>
+    </Rule>
+    <Rule id="V-26648" severity="medium" conversionstatus="pass" title="DTOO328 - Use online translation dictionaries" dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>False</IsNullOrEmpty>
+      <Key>HKEY_CURRENT_USER\software\policies\Microsoft\office\15.0\common\research\translation</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>Verify the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft Word 2013 -&gt; Miscellaneous -&gt; "Use online translation dictionaries" is set to Disabled".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+ HKCU\software\policies\Microsoft\office\15.0\common\research\translation
+
+Criteria: If the value useonline is REG_DWORD = 0, this is not a finding.</RawString>
+      <ValueData>0</ValueData>
+      <ValueName>useonline</ValueName>
+      <ValueType>Dword</ValueType>
+    </Rule>
+    <Rule id="V-26653" severity="medium" conversionstatus="pass" title="DTOO333 - Word 2 and earlier binary documents" dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>False</IsNullOrEmpty>
+      <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\word\security\fileblock</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>Verify the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft Word 2013 -&gt; Word Options -&gt; Security -&gt; Trust Center -&gt; File Block Settings "Word 2 and earlier binary documents and templates" is set to "Enabled: Open/Save blocked, use open policy".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKCU\Software\Policies\Microsoft\Office\15.0\word\security\fileblock
+
+Criteria: If the value Word2Files is REG_DWORD = 2, this is not a finding.</RawString>
+      <ValueData>2</ValueData>
+      <ValueName>Word2Files</ValueName>
+      <ValueType>Dword</ValueType>
+    </Rule>
+    <Rule id="V-26654" severity="medium" conversionstatus="pass" title="DTOO334 - Word 2000 binary documents and templates" dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>False</IsNullOrEmpty>
+      <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\word\security\fileblock</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>Verify the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft Word 2013 -&gt; Word Options -&gt; Security -&gt; Trust Center -&gt; File Block Settings "Word 2000 binary documents and templates" is set to "Enabled: Allow editing and open in Protected View".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKCU\Software\Policies\Microsoft\Office\15.0\word\security\fileblock
+
+Criteria: If the value Word2000Files is REG_DWORD = 5, this is not a finding.</RawString>
+      <ValueData>5</ValueData>
+      <ValueName>Word2000Files</ValueName>
+      <ValueType>Dword</ValueType>
+    </Rule>
+    <Rule id="V-26656" severity="medium" conversionstatus="pass" title="DTOO336 - Word 6.0 binary documents and templates" dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>False</IsNullOrEmpty>
+      <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\word\security\fileblock</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>Verify the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft Word 2013 -&gt; Word Options -&gt; Security -&gt; Trust Center -&gt; File Block Settings "Word 6.0 binary documents and templates" is set to "Enabled: Open/Save blocked, use open policy".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKCU\Software\Policies\Microsoft\Office\15.0\word\security\fileblock
+
+Criteria: If the value Word60Files is REG_DWORD = 2, this is not a finding.</RawString>
+      <ValueData>2</ValueData>
+      <ValueName>Word60Files</ValueName>
+      <ValueType>Dword</ValueType>
+    </Rule>
+    <Rule id="V-26657" severity="medium" conversionstatus="pass" title="DTOO337 - Word 95 binary documents and templates" dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>False</IsNullOrEmpty>
+      <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\word\security\fileblock</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>Verify the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft Word 2013 -&gt; Word Options -&gt; Security -&gt; Trust Center -&gt; File Block Settings "Word 95 binary documents and templates" is set to "Enabled: Allow editing and open in Protected View".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKCU\Software\Policies\Microsoft\Office\15.0\word\security\fileblock
+
+Criteria: If the value Word95Files is REG_DWORD = 5, this is not a finding.</RawString>
+      <ValueData>5</ValueData>
+      <ValueName>Word95Files</ValueName>
+      <ValueType>Dword</ValueType>
+    </Rule>
+    <Rule id="V-26658" severity="medium" conversionstatus="pass" title="DTOO338 -  Word 97 binary documents and templates" dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>False</IsNullOrEmpty>
+      <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\word\security\fileblock</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>Verify the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft Word 2013 -&gt; Word Options -&gt; Security -&gt; Trust Center -&gt; File Block Settings "Word 97 binary documents and templates" is set to "Enabled: Allow editing and open in Protected View".   
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKCU\Software\Policies\Microsoft\Office\15.0\word\security\fileblock
+
+Criteria: If the value Word97Files is REG_DWORD = 5, this is not a finding.</RawString>
+      <ValueData>5</ValueData>
+      <ValueName>Word97Files</ValueName>
+      <ValueType>Dword</ValueType>
+    </Rule>
+    <Rule id="V-26659" severity="medium" conversionstatus="pass" title="DTOO339 - Word XP binary documents and templates" dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>False</IsNullOrEmpty>
+      <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\word\security\fileblock</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>Verify the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft Word 2013 -&gt; Word Options -&gt; Security -&gt; Trust Center -&gt; File Block Settings "Word XP binary documents and templates" is set to "Enabled: Allow editing and open in Protected View".   
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKCU\Software\Policies\Microsoft\Office\15.0\word\security\fileblock
+
+Criteria: If the value WordXPFiles is REG_DWORD = 5, this is not a finding.</RawString>
+      <ValueData>5</ValueData>
+      <ValueName>WordXPFiles</ValueName>
+      <ValueType>Dword</ValueType>
+    </Rule>
+    <Rule id="V-41147" severity="medium" conversionstatus="pass" title="DTOO426 - Custom XML markup warning" dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>False</IsNullOrEmpty>
+      <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\word\options</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>Verify the policy value for User Configuration -&gt; Administrative Templates -&gt; Microsoft Word 2013 -&gt; Word Options -&gt; Advanced -&gt; "Custom markup warning" is set to "Enabled: Prompt".
+
+Procedure: Use the Windows Registry Editor to navigate to the following key: 
+
+HKCU\Software\Policies\Microsoft\Office\15.0\word\options
+
+Criteria: If the value custommarkupwarning is REG_DWORD = 1, this is not a finding.</RawString>
+      <ValueData>1</ValueData>
+      <ValueName>custommarkupwarning</ValueName>
+      <ValueType>Dword</ValueType>
+    </Rule>
+    <Rule id="V-72829" severity="medium" conversionstatus="pass" title="DTOO600 - Macros must be blocked from running in Office 2013 files from the Internet. " dscresource="xRegistry">
+      <Ensure>Present</Ensure>
+      <IsNullOrEmpty>False</IsNullOrEmpty>
+      <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\word\security</Key>
+      <OrganizationValueRequired>False</OrganizationValueRequired>
+      <OrganizationValueTestString />
+      <RawString>Verify the policy value for User Configuration &gt;&gt; Administrative Templates &gt;&gt; Microsoft Word 2013 &gt;&gt; Word Options &gt;&gt; Security &gt;&gt; Trust Center "Block macros from running in Office files from the Internet" is set to "Enabled".
+
+Use the Windows Registry Editor to navigate to the following key: 
+
+HKCU\Software\Policies\Microsoft\Office\15.0\word\security
+
+If the value "blockcontentexecutionfrominternet" is REG_DWORD = 1, this is not a finding.
+</RawString>
+      <ValueData>1</ValueData>
+      <ValueName>blockcontentexecutionfrominternet</ValueName>
+      <ValueType>Dword</ValueType>
+    </Rule>
+  </RegistryRule>
+</DISASTIG>
