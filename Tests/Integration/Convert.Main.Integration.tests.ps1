@@ -583,7 +583,7 @@ try
             WinEventLogRule              = $null
             WindowsFeatureRule           = $null
             WmiRule                      = $null
-        }        
+        }
         'U_MS_Word_2013_STIG_V1R6_Manual-xccdf.xml'        = @{
             AccountPolicyRule            = $null
             AuditPolicyRule              = $null
@@ -608,7 +608,6 @@ try
             WindowsFeatureRule           = $null
             WmiRule                      = $null
         }
-        
     }
     #endregion
     #region Tests

@@ -207,7 +207,7 @@ function Test-RegistryValueType
             $return = $valueType
         }
     }
-    
+
     if ($null -eq $return)
     {
         $return = $TestValueType
