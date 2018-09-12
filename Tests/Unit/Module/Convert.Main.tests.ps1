@@ -178,14 +178,22 @@ try
                         'TechnologyRole' = 'IE11'
                     }
                 )
-                'Outlook2013' = @(
+                'Outlook2013'      = @(
                     @{
-                        'id' = 'Windows_All_Outlook2013'
-                        'Technology' = 'Windows'
+                        'id'                = 'Windows_All_Outlook2013'
+                        'Technology'        = 'Windows'
                         'TechnologyVersion' = 'All'
-                        'TechnologyRole' = 'Outlook2013'
+                        'TechnologyRole'    = 'Outlook2013'
                     }
                 )
+                'Word2013' = @(
+                    @{
+                        'id' = 'Windows_All_Word2013'
+                        'Technology' = 'Windows'
+                        'TechnologyVersion' = 'All'
+                        'TechnologyRole' = 'Word2013'
+                    }
+                )                
             }
             foreach ($sampleString in $sampleStrings.GetEnumerator())
             {
@@ -220,3 +228,4 @@ finally
 {
     . $PSScriptRoot\.tests.footer.ps1
 }
+

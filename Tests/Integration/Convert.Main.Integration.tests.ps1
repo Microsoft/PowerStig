@@ -649,3 +649,4 @@ finally
 {
     . $PSScriptRoot\.tests.footer.ps1
 }
+
