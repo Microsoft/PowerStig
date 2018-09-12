@@ -85,6 +85,7 @@ Describe 'Common Tests - Configuration Module Requirements' {
             WindowsFirewall  = 'FW'
             WindowsServer    = 'DC|MS'
             Outlook2013      = 'Outlook2013'
+            Word2013         = 'Word2013'
         }
         Foreach ($resource in $moduleDscResourceList)
         {
