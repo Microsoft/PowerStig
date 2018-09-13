@@ -4,6 +4,7 @@
 
 * Added the following STIGs
   * Microsoft Outlook 2013 STIG V1R12
+  * Microsoft Excel 2013 STIG V1R7
 
 ## 2.1.0.0
 
