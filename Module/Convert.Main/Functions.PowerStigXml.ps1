@@ -546,6 +546,12 @@ function Split-BenchmarkId
     $activeDirectoryVariations = @(
         'Active_Directory'
     )
+    $OfficeVariations = @(
+        'Excel',
+        'Outlook',
+        'PowerPoint',
+        'Word'
+    )
 
     $Id = $Id -replace ($idVariations -join '|'), ''
 
@@ -591,6 +597,12 @@ function Split-BenchmarkId
         {$PSItem -match 'FireFox'}
         {
             $returnId = "Mozilla_All_FireFox"
+        }
+        {$PSItem -match 'Excel' -or $PSItem -match 'Outlook' -or $PSItem -match 'PowerPoint' -or $PSItem -match 'Word'}
+        {
+            $officeStig = ($Id -split '_')
+            $officeStig = $officeStig[1] + $officeStig[2]
+            $returnId = 'Windows_All_' + $officeStig 
         }
         default
         {

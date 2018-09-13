@@ -1,4 +1,4 @@
-<DISASTIG id="Microsoft_Outlook_2013" version="1.12" created="9/11/2018">
+<DISASTIG id="Microsoft_Outlook_2013" version="1.12" created="9/13/2018">
   <RegistryRule dscresourcemodule="xPSDesiredStateConfiguration">
     <Rule id="V-17173" severity="medium" conversionstatus="pass" title="DTOO104 - Disable user name and password" dscresource="xRegistry">
       <Ensure>Present</Ensure>
@@ -85,7 +85,7 @@ Criteria: If the value outlook.exe is REG_DWORD = 1, this is not a finding.</Raw
       <ValueName>outlook.exe</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17470" severity="medium" conversionstatus="pass" title="DTOO272 - Content download from safe zones" dscresource="xRegistry">
+    <Rule id="V-17470" severity="medium" conversionstatus="pass" title="DTOO272 - Content download from safe zones" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\options\mail</Key>
@@ -102,7 +102,7 @@ Criteria: If the value UnblockSafeZone is REG_DWORD = 1, this is not a finding.<
       <ValueName>UnblockSafeZone</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17546" severity="medium" conversionstatus="pass" title="DTOO219 - Access to Published Calendars " dscresource="xRegistry">
+    <Rule id="V-17546" severity="medium" conversionstatus="pass" title="DTOO219 - Access to Published Calendars " dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\options\pubcal</Key>
@@ -119,7 +119,7 @@ Criteria: If the value RestrictedAccessOnly is REG_DWORD = 1, this is not a find
       <ValueName>RestrictedAccessOnly</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17558" severity="medium" conversionstatus="pass" title="DTOO224 - Email Recipient to Safe Sender List" dscresource="xRegistry">
+    <Rule id="V-17558" severity="medium" conversionstatus="pass" title="DTOO224 - Email Recipient to Safe Sender List" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\options\mail</Key>
@@ -136,7 +136,7 @@ Criteria: If the value JunkMailTrustOutgoingRecipients is REG_DWORD = 0, this is
       <ValueName>JunkMailTrustOutgoingRecipients</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17559" severity="medium" conversionstatus="pass" title="DTOO234 - Active X One-Off Forms" dscresource="xRegistry">
+    <Rule id="V-17559" severity="medium" conversionstatus="pass" title="DTOO234 - Active X One-Off Forms" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security</Key>
@@ -153,7 +153,7 @@ Criteria: If the value AllowActiveXOneOffForms is REG_DWORD = 0, this is not a f
       <ValueName>AllowActiveXOneOffForms</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17562" severity="medium" conversionstatus="pass" title="DTOO246 - Scripts in One-Off Forms" dscresource="xRegistry">
+    <Rule id="V-17562" severity="medium" conversionstatus="pass" title="DTOO246 - Scripts in One-Off Forms" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security</Key>
@@ -170,7 +170,7 @@ Criteria: If the value EnableOneOffFormScripts is REG_DWORD = 0, this is not a f
       <ValueName>EnableOneOffFormScripts</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17564" severity="medium" conversionstatus="pass" title="DTOO273 - Block Trusted Zones" dscresource="xRegistry">
+    <Rule id="V-17564" severity="medium" conversionstatus="pass" title="DTOO273 - Block Trusted Zones" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\options\mail</Key>
@@ -187,7 +187,7 @@ Criteria: If the value TrustedZone is REG_DWORD = 0, this is not a finding.</Raw
       <ValueName>TrustedZone</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17566" severity="medium" conversionstatus="pass" title="DTOO236 - Add-In Trust Level" dscresource="xRegistry">
+    <Rule id="V-17566" severity="medium" conversionstatus="pass" title="DTOO236 - Add-In Trust Level" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security</Key>
@@ -204,7 +204,7 @@ Criteria: If the value AddinTrust is REG_DWORD = 1, this is not a finding.</RawS
       <ValueName>AddinTrust</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17568" severity="medium" conversionstatus="pass" title="DTOO250 - Object Model Prompt for Address Book " dscresource="xRegistry">
+    <Rule id="V-17568" severity="medium" conversionstatus="pass" title="DTOO250 - Object Model Prompt for Address Book " dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security</Key>
@@ -221,7 +221,7 @@ Criteria: If the value PromptOOMAddressBookAccess is REG_DWORD = 0, this is not 
       <ValueName>PromptOOMAddressBookAccess</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17569" severity="medium" conversionstatus="pass" title="DTOO241 - Demote Attachments to Level 2" dscresource="xRegistry">
+    <Rule id="V-17569" severity="medium" conversionstatus="pass" title="DTOO241 - Demote Attachments to Level 2" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security</Key>
@@ -238,7 +238,7 @@ Criteria: If the value AllowUsersToLowerAttachments is REG_DWORD = 0, this is no
       <ValueName>AllowUsersToLowerAttachments</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17570" severity="medium" conversionstatus="pass" title="DTOO254 - Object Model Prompt for Formula Property" dscresource="xRegistry">
+    <Rule id="V-17570" severity="medium" conversionstatus="pass" title="DTOO254 - Object Model Prompt for Formula Property" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security</Key>
@@ -256,7 +256,7 @@ Criteria: If the value PromptOOMFormulaAccess is REG_DWORD = 0, this is not a fi
       <ValueName>PromptOOMFormulaAccess</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17571" severity="medium" conversionstatus="pass" title="DTOO253 - Object Model Prompt for Save As" dscresource="xRegistry">
+    <Rule id="V-17571" severity="medium" conversionstatus="pass" title="DTOO253 - Object Model Prompt for Save As" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security</Key>
@@ -273,7 +273,7 @@ Criteria: If the value PromptOOMSaveAs is REG_DWORD = 0, this is not a finding.<
       <ValueName>PromptOOMSaveAs</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17572" severity="medium" conversionstatus="pass" title="DTOO251 - Object Model Prompt for Reading Address" dscresource="xRegistry">
+    <Rule id="V-17572" severity="medium" conversionstatus="pass" title="DTOO251 - Object Model Prompt for Reading Address" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security</Key>
@@ -290,7 +290,7 @@ Criteria: If the value PromptOOMAddressInformationAccess is REG_DWORD = 0, this 
       <ValueName>PromptOOMAddressInformationAccess</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17573" severity="medium" conversionstatus="pass" title="DTOO252-Object Model Prompt for Meeting Response" dscresource="xRegistry">
+    <Rule id="V-17573" severity="medium" conversionstatus="pass" title="DTOO252-Object Model Prompt for Meeting Response" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security</Key>
@@ -307,7 +307,7 @@ Criteria: If the value PromptOOMMeetingTaskRequestResponse is REG_DWORD = 0, thi
       <ValueName>PromptOOMMeetingTaskRequestResponse</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17574" severity="medium" conversionstatus="pass" title="DTOO249 - Object Model Prmpt for auto email send" dscresource="xRegistry">
+    <Rule id="V-17574" severity="medium" conversionstatus="pass" title="DTOO249 - Object Model Prmpt for auto email send" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security</Key>
@@ -324,7 +324,7 @@ Criteria: If the value PromptOOMSend is REG_DWORD = 0, this is not a finding.</R
       <ValueName>PromptOOMSend</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17575" severity="medium" conversionstatus="pass" title="DTOO256 - Trusted Add-Ins Security" dscresource="xRegistry">
+    <Rule id="V-17575" severity="medium" conversionstatus="pass" title="DTOO256 - Trusted Add-Ins Security" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\Outlook\security\trustedaddins</Key>
@@ -345,7 +345,7 @@ If the registry key exists, but with no entries, this is not a finding.
       <ValueName>Configure trusted add-ins</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17587" severity="medium" conversionstatus="pass" title="DTOO237-Disable &quot;remember password&quot; on eMail Accts" dscresource="xRegistry">
+    <Rule id="V-17587" severity="medium" conversionstatus="pass" title="DTOO237-Disable &quot;remember password&quot; on eMail Accts" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security</Key>
@@ -362,7 +362,7 @@ Criteria: If the value EnableRememberPwd is REG_DWORD = 0, this is not a finding
       <ValueName>EnableRememberPwd</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17601" severity="medium" conversionstatus="pass" title="DTOO243 - Level 1 Attachment prompt" dscresource="xRegistry">
+    <Rule id="V-17601" severity="medium" conversionstatus="pass" title="DTOO243 - Level 1 Attachment prompt" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security</Key>
@@ -379,7 +379,7 @@ Criteria: If the value DontPromptLevel1AttachClose is REG_DWORD = 0, this is not
       <ValueName>DontPromptLevel1AttachClose</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17602" severity="medium" conversionstatus="pass" title="DTOO242 - Level 1 Attachment Prompt on sending. " dscresource="xRegistry">
+    <Rule id="V-17602" severity="medium" conversionstatus="pass" title="DTOO242 - Level 1 Attachment Prompt on sending. " dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security</Key>
@@ -396,7 +396,7 @@ Criteria: If the value DontPromptLevel1AttachSend is REG_DWORD = 0, this is not 
       <ValueName>DontPromptLevel1AttachSend</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17610" severity="medium" conversionstatus="pass" title="DTOO283 - Dwnld articles as HTML attachments" dscresource="xRegistry">
+    <Rule id="V-17610" severity="medium" conversionstatus="pass" title="DTOO283 - Dwnld articles as HTML attachments" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\options\rss</Key>
@@ -413,7 +413,7 @@ Criteria: If the value EnableFullTextHTML is REG_DWORD = 0, this is not a findin
       <ValueName>EnableFullTextHTML</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17613" severity="medium" conversionstatus="pass" title="DTOO277 - Links in Email Messages" dscresource="xRegistry">
+    <Rule id="V-17613" severity="medium" conversionstatus="pass" title="DTOO277 - Links in Email Messages" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\options\mail</Key>
@@ -430,7 +430,7 @@ Criteria: If the value JunkMailEnableLinks is REG_DWORD = 0, this is not a findi
       <ValueName>JunkMailEnableLinks</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17615" severity="medium" conversionstatus="pass" title="DTOO279 - Enable RPC Encryption " dscresource="xRegistry">
+    <Rule id="V-17615" severity="medium" conversionstatus="pass" title="DTOO279 - Enable RPC Encryption " dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\rpc</Key>
@@ -447,7 +447,7 @@ Criteria: If the value EnableRPCEncryption is REG_DWORD = 1, this is not a findi
       <ValueName>EnableRPCEncryption</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17624" severity="medium" conversionstatus="pass" title="DTOO221 - Junk Mail UI " dscresource="xRegistry">
+    <Rule id="V-17624" severity="medium" conversionstatus="pass" title="DTOO221 - Junk Mail UI " dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook</Key>
@@ -464,7 +464,7 @@ Criteria: If the value DisableAntiSpam is REG_DWORD = 0, this is not a finding.<
       <ValueName>DisableAntiSpam</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17630" severity="medium" conversionstatus="pass" title="DTOO274 - Internet with Safe Zones " dscresource="xRegistry">
+    <Rule id="V-17630" severity="medium" conversionstatus="pass" title="DTOO274 - Internet with Safe Zones " dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\options\mail</Key>
@@ -481,7 +481,7 @@ Criteria: If the value Internet is REG_DWORD = 0, this is not a finding.</RawStr
       <ValueName>Internet</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17634" severity="medium" conversionstatus="pass" title="DTOO275 - Incl. Intranet with Safe Zone " dscresource="xRegistry">
+    <Rule id="V-17634" severity="medium" conversionstatus="pass" title="DTOO275 - Incl. Intranet with Safe Zone " dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\options\mail</Key>
@@ -498,7 +498,7 @@ Criteria: If the value Intranet is REG_DWORD = 0, this is not a finding.</RawStr
       <ValueName>Intranet</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17671" severity="medium" conversionstatus="pass" title="DTOO240 - Level 1 Attachments" dscresource="xRegistry">
+    <Rule id="V-17671" severity="medium" conversionstatus="pass" title="DTOO240 - Level 1 Attachments" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security</Key>
@@ -515,7 +515,7 @@ Criteria: If the value ShowLevel1Attach is REG_DWORD = 0, this is not a finding.
       <ValueName>ShowLevel1Attach</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17672" severity="medium" conversionstatus="pass" title="DTOO270 - External Pictures &amp; content " dscresource="xRegistry">
+    <Rule id="V-17672" severity="medium" conversionstatus="pass" title="DTOO270 - External Pictures &amp; content " dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\options\mail</Key>
@@ -534,7 +534,7 @@ Criteria: If the value BlockExtContent is REG_DWORD = 1, this is not a finding.<
       <ValueName>BlockExtContent</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17673" severity="medium" conversionstatus="pass" title="DTOO227 - Digital Signature handling" dscresource="xRegistry">
+    <Rule id="V-17673" severity="medium" conversionstatus="pass" title="DTOO227 - Digital Signature handling" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\common\mailsettings</Key>
@@ -551,7 +551,7 @@ Criteria: If the value DisableSignatures is REG_DWORD = 0, this is not a finding
       <ValueName>DisableSignatures</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17674" severity="medium" conversionstatus="pass" title="DTOO230 - No fldr home pages / non-default stores " dscresource="xRegistry">
+    <Rule id="V-17674" severity="medium" conversionstatus="pass" title="DTOO230 - No fldr home pages / non-default stores " dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security</Key>
@@ -568,7 +568,7 @@ Criteria: If the value NonDefaultStoreScript is REG_DWORD = 0, this is not a fin
       <ValueName>NonDefaultStoreScript</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17675" severity="medium" conversionstatus="pass" title="DTOO233 - OOM scripts for Public Folders" dscresource="xRegistry">
+    <Rule id="V-17675" severity="medium" conversionstatus="pass" title="DTOO233 - OOM scripts for Public Folders" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security</Key>
@@ -585,7 +585,7 @@ Criteria: If the value PublicFolderScript is REG_DWORD = 0, this is not a findin
       <ValueName>PublicFolderScript</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17676" severity="medium" conversionstatus="pass" title="DTOO232 - OOM scripts for Shared Folders " dscresource="xRegistry">
+    <Rule id="V-17676" severity="medium" conversionstatus="pass" title="DTOO232 - OOM scripts for Shared Folders " dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security</Key>
@@ -602,7 +602,7 @@ Criteria: If the value SharedFolderScript is REG_DWORD = 0, this is not a findin
       <ValueName>SharedFolderScript</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17678" severity="medium" conversionstatus="pass" title="DTOO285 - Internet Calendar Integration " dscresource="xRegistry">
+    <Rule id="V-17678" severity="medium" conversionstatus="pass" title="DTOO285 - Internet Calendar Integration " dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\options\webcal</Key>
@@ -619,7 +619,7 @@ Criteria: If the value Disable is REG_DWORD = 1, this is not a finding.</RawStri
       <ValueName>Disable</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17733" severity="medium" conversionstatus="pass" title="DTOO269 - Attachments to Secure Temporary Folder " dscresource="xRegistry">
+    <Rule id="V-17733" severity="medium" conversionstatus="pass" title="DTOO269 - Attachments to Secure Temporary Folder " dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security\OutlookSecureTempFolder</Key>
@@ -636,7 +636,7 @@ Criteria: If the registry key exists, this is a finding.</RawString>
       <ValueName>Attachment Secure Temporary Folder</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17734" severity="medium" conversionstatus="pass" title="DTOO280 - Authentication w/Exchange Svr " dscresource="xRegistry">
+    <Rule id="V-17734" severity="medium" conversionstatus="pass" title="DTOO280 - Authentication w/Exchange Svr " dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security</Key>
@@ -653,7 +653,7 @@ Criteria: If the value AuthenticationService is REG_DWORD = 9, this is not a fin
       <ValueName>AuthenticationService</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17738" severity="medium" conversionstatus="pass" title="DTOO284 - Auto download attachments Internet Cal" dscresource="xRegistry">
+    <Rule id="V-17738" severity="medium" conversionstatus="pass" title="DTOO284 - Auto download attachments Internet Cal" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\options\webcal</Key>
@@ -670,7 +670,7 @@ Criteria: If the value EnableAttachments is REG_DWORD = 0, this is not a finding
       <ValueName>EnableAttachments</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17739" severity="medium" conversionstatus="pass" title="DTOO271 - Auto Download from Safe lists " dscresource="xRegistry">
+    <Rule id="V-17739" severity="medium" conversionstatus="pass" title="DTOO271 - Auto Download from Safe lists " dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\options\mail</Key>
@@ -687,7 +687,7 @@ Criteria: If the value UnblockSpecificSenders is REG_DWORD = 0, this is not a fi
       <ValueName>UnblockSpecificSenders</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17753" severity="medium" conversionstatus="pass" title="DTOO229 - Make Outlook the default program" dscresource="xRegistry">
+    <Rule id="V-17753" severity="medium" conversionstatus="pass" title="DTOO229 - Make Outlook the default program" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\options\general</Key>
@@ -704,7 +704,7 @@ Criteria: If the value Check Default Client is REG_DWORD = 1, this is not a find
       <ValueName>Check Default Client</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17755" severity="medium" conversionstatus="pass" title="DTOO260 - SMime message formats" dscresource="xRegistry">
+    <Rule id="V-17755" severity="medium" conversionstatus="pass" title="DTOO260 - SMime message formats" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security</Key>
@@ -721,7 +721,7 @@ Criteria: If the value MsgFormats is REG_DWORD = 1, this is not a finding.</RawS
       <ValueName>MsgFormats</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17756" severity="medium" conversionstatus="pass" title="DTOO268 - Missing Root Certificates " dscresource="xRegistry">
+    <Rule id="V-17756" severity="medium" conversionstatus="pass" title="DTOO268 - Missing Root Certificates " dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security</Key>
@@ -738,7 +738,7 @@ Criteria: If the value SigStatusNoTrustDecision is REG_DWORD = 2, this is not a 
       <ValueName>SigStatusNoTrustDecision</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17760" severity="medium" conversionstatus="pass" title="DTOO239 - Outlook Security Mode " dscresource="xRegistry">
+    <Rule id="V-17760" severity="medium" conversionstatus="pass" title="DTOO239 - Outlook Security Mode " dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security</Key>
@@ -755,10 +755,10 @@ Criteria: If the value AdminSecurityMode is REG_DWORD = 3, this is not a finding
       <ValueName>AdminSecurityMode</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17761.a" severity="medium" conversionstatus="pass" title="DTOO228 - Plain Text Options " dscresource="xRegistry">
+    <Rule id="V-17761.a" severity="medium" conversionstatus="pass" title="DTOO228 - Plain Text Options " dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
-      <Key>HKCU\Software\Policies\Microsoft\Office\15.0\common\mailsettings</Key>
+      <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\common\mailsettings</Key>
       <OrganizationValueRequired>False</OrganizationValueRequired>
       <OrganizationValueTestString />
       <RawString>Criteria: If the value for HKCU\Software\Policies\Microsoft\Office\15.0\common\mailsettings\PlainWrapLen is REG_DWORD = 132 (decimal)</RawString>
@@ -766,7 +766,7 @@ Criteria: If the value AdminSecurityMode is REG_DWORD = 3, this is not a finding
       <ValueName>PlainWrapLen</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17761.b" severity="medium" conversionstatus="pass" title="DTOO228 - Plain Text Options " dscresource="xRegistry">
+    <Rule id="V-17761.b" severity="medium" conversionstatus="pass" title="DTOO228 - Plain Text Options " dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\options\mail</Key>
@@ -777,7 +777,7 @@ Criteria: If the value AdminSecurityMode is REG_DWORD = 3, this is not a finding
       <ValueName>Message Plain Format Mime</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17762" severity="medium" conversionstatus="pass" title="DTOO217 - Prevent publishing to DAV Servers" dscresource="xRegistry">
+    <Rule id="V-17762" severity="medium" conversionstatus="pass" title="DTOO217 - Prevent publishing to DAV Servers" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\options\pubcal</Key>
@@ -794,7 +794,7 @@ Criteria: If the value DisableDav is REG_DWORD = 1, this is not a finding.</RawS
       <ValueName>DisableDav</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17763" severity="medium" conversionstatus="pass" title="DTOO216 - Publishing to Office Online " dscresource="xRegistry">
+    <Rule id="V-17763" severity="medium" conversionstatus="pass" title="DTOO216 - Publishing to Office Online " dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\options\pubcal</Key>
@@ -811,7 +811,7 @@ Criteria: If the value DisableOfficeOnline is REG_DWORD = 1, this is not a findi
       <ValueName>DisableOfficeOnline</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17766" severity="medium" conversionstatus="pass" title="DTOO238 - Prev't users customizing security set" dscresource="xRegistry">
+    <Rule id="V-17766" severity="medium" conversionstatus="pass" title="DTOO238 - Prev't users customizing security set" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook</Key>
@@ -828,7 +828,7 @@ Criteria: If the value DisallowAttachmentCustomization is REG_DWORD = 1, this is
       <ValueName>DisallowAttachmentCustomization</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17770" severity="medium" conversionstatus="pass" title="DTOO214 - Read EMail as plain text " dscresource="xRegistry">
+    <Rule id="V-17770" severity="medium" conversionstatus="pass" title="DTOO214 - Read EMail as plain text " dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\options\mail</Key>
@@ -845,7 +845,7 @@ Criteria: If the value ReadAsPlain is REG_DWORD = 1, this is not a finding.</Raw
       <ValueName>ReadAsPlain</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17771" severity="medium" conversionstatus="pass" title="DTOO215 - Read signed EMail as plain text " dscresource="xRegistry">
+    <Rule id="V-17771" severity="medium" conversionstatus="pass" title="DTOO215 - Read signed EMail as plain text " dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\options\mail</Key>
@@ -862,7 +862,7 @@ Criteria: If the value ReadSignedAsPlain is REG_DWORD = 1, this is not a finding
       <ValueName>ReadSignedAsPlain</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17774" severity="medium" conversionstatus="pass" title="DTOO244 - Lvl 1 File extensions" dscresource="xRegistry">
+    <Rule id="V-17774" severity="medium" conversionstatus="pass" title="DTOO244 - Lvl 1 File extensions" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security</Key>
@@ -882,7 +882,7 @@ Criteria: If the registry value “FileExtensionsRemoveLevel1” exists, this is
       <ValueName>Remove file extensions blocked as Level 1</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17775" severity="medium" conversionstatus="pass" title="DTOO245 - Lvl 2 File Extensions" dscresource="xRegistry">
+    <Rule id="V-17775" severity="medium" conversionstatus="pass" title="DTOO245 - Lvl 2 File Extensions" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security\</Key>
@@ -900,7 +900,7 @@ Criteria: If the registry value “FileExtensionsRemoveLevel2” exists, this is
       <ValueName>Remove file extensions blocked as Level 2</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17776" severity="medium" conversionstatus="pass" title="DTOO218 - Calendar details published by users" dscresource="xRegistry">
+    <Rule id="V-17776" severity="medium" conversionstatus="pass" title="DTOO218 - Calendar details published by users" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\options\pubcal</Key>
@@ -917,7 +917,7 @@ Criteria: If the value PublishCalendarDetailsPolicy is REG_DWORD = 4000 (hex) or
       <ValueName>PublishCalendarDetailsPolicy</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17777" severity="medium" conversionstatus="pass" title="DTOO220 - Upload methods" dscresource="xRegistry">
+    <Rule id="V-17777" severity="medium" conversionstatus="pass" title="DTOO220 - Upload methods" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\options\pubcal</Key>
@@ -934,7 +934,7 @@ Criteria: If the value SingleUploadOnly is REG_DWORD = 1, this is not a finding.
       <ValueName>SingleUploadOnly</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17778" severity="medium" conversionstatus="pass" title="DTOO267 - Retrieving CRLs - Outlook" dscresource="xRegistry">
+    <Rule id="V-17778" severity="medium" conversionstatus="pass" title="DTOO267 - Retrieving CRLs - Outlook" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security</Key>
@@ -951,7 +951,7 @@ Criteria: If the value UseCRLChasing is REG_DWORD = 1, this is not a finding.</R
       <ValueName>UseCRLChasing</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17787" severity="medium" conversionstatus="pass" title="DTOO262 - FIPS compliant mode" dscresource="xRegistry">
+    <Rule id="V-17787" severity="medium" conversionstatus="pass" title="DTOO262 - FIPS compliant mode" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security</Key>
@@ -968,7 +968,7 @@ Criteria: If the value FIPSMode is REG_DWORD = 1, this is not a finding.</RawStr
       <ValueName>FIPSMode</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17790" severity="medium" conversionstatus="pass" title="DTOO257 - No S/Mime interop w/ external clients" dscresource="xRegistry">
+    <Rule id="V-17790" severity="medium" conversionstatus="pass" title="DTOO257 - No S/Mime interop w/ external clients" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security</Key>
@@ -985,7 +985,7 @@ Criteria: If the value ExternalSMime is REG_DWORD = 0, this is not a finding.</R
       <ValueName>ExternalSMime</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17795" severity="medium" conversionstatus="pass" title="DTOO266 - S/Mime receipt requests " dscresource="xRegistry">
+    <Rule id="V-17795" severity="medium" conversionstatus="pass" title="DTOO266 - S/Mime receipt requests " dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security</Key>
@@ -1002,7 +1002,7 @@ Criteria: If the value RespondToReceiptRequests is REG_DWORD = 2, this is not a 
       <ValueName>RespondToReceiptRequests</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17798" severity="medium" conversionstatus="pass" title="DTOO276 - Security settings for macros" dscresource="xRegistry">
+    <Rule id="V-17798" severity="medium" conversionstatus="pass" title="DTOO276 - Security settings for macros" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security</Key>
@@ -1020,7 +1020,7 @@ Criteria: If the value of "Level" is REG_DWORD = 2, this is not a finding.
       <ValueName>Level</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17800" severity="medium" conversionstatus="pass" title="DTOO264 - Clear signed messages" dscresource="xRegistry">
+    <Rule id="V-17800" severity="medium" conversionstatus="pass" title="DTOO264 - Clear signed messages" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security</Key>
@@ -1037,7 +1037,7 @@ Criteria: If the value ClearSign is REG_DWORD = 1, this is not a finding.</RawSt
       <ValueName>ClearSign</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17802" severity="medium" conversionstatus="pass" title="DTOO247 - Custom OOM Action Exe. Prompt " dscresource="xRegistry">
+    <Rule id="V-17802" severity="medium" conversionstatus="pass" title="DTOO247 - Custom OOM Action Exe. Prompt " dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security</Key>
@@ -1054,7 +1054,7 @@ Criteria: If the value PromptOOMCustomAction is REG_DWORD = 0, this is not a fin
       <ValueName>PromptOOMCustomAction</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17803" severity="medium" conversionstatus="pass" title="DTOO265 - Signature Warnings" dscresource="xRegistry">
+    <Rule id="V-17803" severity="medium" conversionstatus="pass" title="DTOO265 - Signature Warnings" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security</Key>
@@ -1071,7 +1071,7 @@ Criteria: If the value WarnAboutInvalid is REG_DWORD = 1, this is not a finding.
       <ValueName>WarnAboutInvalid</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17806" severity="medium" conversionstatus="pass" title="DTOO281 - Sync RSS Feeds w/Common List" dscresource="xRegistry">
+    <Rule id="V-17806" severity="medium" conversionstatus="pass" title="DTOO281 - Sync RSS Feeds w/Common List" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\options\rss</Key>
@@ -1088,7 +1088,7 @@ Criteria: If the value SyncToSysCFL is REG_DWORD = 0, this is not a finding.</Ra
       <ValueName>SyncToSysCFL</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17807" severity="medium" conversionstatus="pass" title="DTOO223 - Trust EMail from Contacts" dscresource="xRegistry">
+    <Rule id="V-17807" severity="medium" conversionstatus="pass" title="DTOO223 - Trust EMail from Contacts" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\options\mail</Key>
@@ -1105,7 +1105,7 @@ Criteria: If the value JunkMailTrustContacts is REG_DWORD = 1, this is not a fin
       <ValueName>JunkMailTrustContacts</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17808" severity="medium" conversionstatus="pass" title="DTOO282 - RSS Feeds" dscresource="xRegistry">
+    <Rule id="V-17808" severity="medium" conversionstatus="pass" title="DTOO282 - RSS Feeds" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\options\rss</Key>
@@ -1136,7 +1136,7 @@ Criteria: If the REG_DWORD value for "Disable" is 1, this is not a finding.</Raw
       <ValueName>Turn off RSS feature</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17812" severity="medium" conversionstatus="pass" title="DTOO231 - Unicode use when dragging Email " dscresource="xRegistry">
+    <Rule id="V-17812" severity="medium" conversionstatus="pass" title="DTOO231 - Unicode use when dragging Email " dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\options\general</Key>
@@ -1153,7 +1153,7 @@ Criteria: If the value MSGFormat is REG_DWORD = 0, this is not a finding.</RawSt
       <ValueName>MSGFormat</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-17944" severity="medium" conversionstatus="pass" title="DTOO286 - Disable User Entries to Server list" dscresource="xRegistry">
+    <Rule id="V-17944" severity="medium" conversionstatus="pass" title="DTOO286 - Disable User Entries to Server list" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\meetings\profile</Key>
@@ -1255,7 +1255,7 @@ Criteria: If the value outlook.exe is REG_DWORD = 1, this is not a finding.</Raw
       <ValueName>outlook.exe</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-26632" severity="medium" conversionstatus="pass" title="DTOO313 - Automatically download enclosures" dscresource="xRegistry">
+    <Rule id="V-26632" severity="medium" conversionstatus="pass" title="DTOO313 - Automatically download enclosures" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\options\rss</Key>
@@ -1272,7 +1272,7 @@ Criteria: If the value EnableAttachments is REG_DWORD = 0, this is not a finding
       <ValueName>EnableAttachments</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-26633" severity="medium" conversionstatus="pass" title="DTOO344 - Outlook Rich Text options" dscresource="xRegistry">
+    <Rule id="V-26633" severity="medium" conversionstatus="pass" title="DTOO344 - Outlook Rich Text options" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\options\mail</Key>
@@ -1289,7 +1289,7 @@ Criteria: If the value Message RTF Format is REG_DWORD = 1, this is not a findin
       <ValueName>Message RTF Format</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-26634" severity="medium" conversionstatus="pass" title="DTOO314 - Set message format" dscresource="xRegistry">
+    <Rule id="V-26634" severity="medium" conversionstatus="pass" title="DTOO314 - Set message format" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\options\mail</Key>
@@ -1306,7 +1306,7 @@ Criteria: If the value EditorPreference is REG_DWORD = 65536 (dec), this is not 
       <ValueName>EditorPreference</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-26635" severity="medium" conversionstatus="pass" title="DTOO315 - Outlook Security settings " dscresource="xRegistry">
+    <Rule id="V-26635" severity="medium" conversionstatus="pass" title="DTOO315 - Outlook Security settings " dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security</Key>
@@ -1323,7 +1323,7 @@ Criteria: If the value ForceDefaultProfile is REG_DWORD = 0, this is not a findi
       <ValueName>ForceDefaultProfile</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-26636" severity="medium" conversionstatus="pass" title="DTOO316 - Minimum encryption settings" dscresource="xRegistry">
+    <Rule id="V-26636" severity="medium" conversionstatus="pass" title="DTOO316 - Minimum encryption settings" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security</Key>
@@ -1340,7 +1340,7 @@ Criteria: If the value MinEncKey is REG_DWORD = 168, this is not a finding.</Raw
       <ValueName>MinEncKey</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-26637" severity="medium" conversionstatus="pass" title="DTOO317 - Signed/encrypted messages " dscresource="xRegistry">
+    <Rule id="V-26637" severity="medium" conversionstatus="pass" title="DTOO317 - Signed/encrypted messages " dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security</Key>
@@ -1357,7 +1357,7 @@ Criteria: If the value NoCheckOnSessionSecurity is REG_DWORD = 1, this is not a 
       <ValueName>NoCheckOnSessionSecurity</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-26702" severity="medium" conversionstatus="pass" title="DTOO320 - Check e-mail address against certificate" dscresource="xRegistry">
+    <Rule id="V-26702" severity="medium" conversionstatus="pass" title="DTOO320 - Check e-mail address against certificate" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\15.0\outlook\security</Key>
@@ -1374,7 +1374,7 @@ Criteria: If the value SupressNameChecks is REG_DWORD = 1, this is not a finding
       <ValueName>SupressNameChecks</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-41492" severity="medium" conversionstatus="pass" title="DTOO424 - Disable weather bar in Outlook" dscresource="xRegistry">
+    <Rule id="V-41492" severity="medium" conversionstatus="pass" title="DTOO424 - Disable weather bar in Outlook" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\software\policies\Microsoft\office\15.0\outlook\options\calendar</Key>
@@ -1391,7 +1391,7 @@ Criteria: If the value disableweather is REG_DWORD = 1, this is not a finding.</
       <ValueName>disableweather</ValueName>
       <ValueType>Dword</ValueType>
     </Rule>
-    <Rule id="V-41493" severity="medium" conversionstatus="pass" title="DTOO425 - Disable Internet and network path into hyperlinks" dscresource="xRegistry">
+    <Rule id="V-41493" severity="medium" conversionstatus="pass" title="DTOO425 - Disable Internet and network path into hyperlinks" dscresource="cAdministrativeTemplate">
       <Ensure>Present</Ensure>
       <IsNullOrEmpty>False</IsNullOrEmpty>
       <Key>HKEY_CURRENT_USER\software\policies\Microsoft\office\15.0\outlook\options\autoformat</Key>
