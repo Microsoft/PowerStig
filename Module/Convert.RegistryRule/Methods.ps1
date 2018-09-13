@@ -974,6 +974,7 @@ function Split-MultipleRegistryEntries
             {
                 $paths = $($CheckContent -join " ") -Split "AND(\s*)Procedure:"
             }
+
             if ( $CheckContent -match 'Navigate to:' )
             {
                 $keys = @()
@@ -984,6 +985,7 @@ function Split-MultipleRegistryEntries
                     {
                         $keys += $line
                     }
+                    
                     if ( $line -match 'REG_DWORD value' )
                     {
                         foreach ($key in $keys)
@@ -1001,6 +1003,7 @@ function Split-MultipleRegistryEntries
         {
             $paths = $paths -split " and "
         }
+
         foreach ($path in $paths)
         {
             if (![string]::IsNullOrWhiteSpace($path))
