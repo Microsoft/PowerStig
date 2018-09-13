@@ -319,10 +319,42 @@ function Get-StigRuleResource
         {
             return Get-FileContentRuleDscResource -Key $this.Key
         }
+        'RegistryRule'
+        {
+            return Get-RegistryRuleDscResource -Key $this.Key
+        }
         default
         {
             return $DscResource.($RuleType.ToString())
         }
+    }
+}
+
+<#
+    .SYNOPSIS
+        Returns the name of the DSC resource used to handle the specific rule
+
+    .PARAMETER Key
+        The Registry Key of the STIG Rule
+#>
+function Get-RegistryRuleDscResource
+{
+    [CmdletBinding()]
+    [OutputType([String])]
+    param
+    (
+        [parameter(Mandatory = $true)]
+        [String]
+        $Key
+    )
+    
+    if ($Key -match "^hklm")
+    {
+        return "xRegistry"
+    }
+    else
+    {
+        return "cAdministrativeTemplate"
     }
 }
 
@@ -397,8 +429,8 @@ function Get-PermissionRuleDscResource
 <#
     .SYNOPSIS
         Returns the name fo the DSC resource needed to manage a FileContentRule
-    .PARAMETER RuleId
-        The ID of the STIG rule
+    .PARAMETER Key
+        The Key of the STIG rule
     .EXAMPLE
         Get-FileContentRuleDscResource -StigId 'V-19741'
 #>
