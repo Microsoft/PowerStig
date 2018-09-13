@@ -178,7 +178,7 @@ try
                         'TechnologyRole' = 'IE11'
                     }
                 )
-                'Outlook2013'      = @(
+                'Outlook2013' = @(
                     @{
                         'id'                = 'Windows_All_Outlook2013'
                         'Technology'        = 'Windows'
