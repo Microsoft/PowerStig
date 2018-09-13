@@ -186,6 +186,12 @@ try
                         'TechnologyRole' = 'Outlook2013'
                     }
                 )
+                'Excel2013' = @(
+                    'id' = 'Windows_All_Excel2013'
+                    'Technology' = 'Windows'
+                    'TechnologyVersion' = 'All'
+                    'TechnologyRole' = 'Excel2013'
+                )
             }
             foreach ($sampleString in $sampleStrings.GetEnumerator())
             {

@@ -36,7 +36,7 @@ Class TechnologyRole
     #>
     static $ValidateSet = @"
 2012R2 = DNS, DC, MS, IISSite, IISServer
-All = ADDomain, ADForest, FW, IE11, DotNet4, Outlook2013
+All = ADDomain, ADForest, FW, IE11, DotNet4, Outlook2013, Excel2013
 2012 = Instance, Database
 "@
 

@@ -189,6 +189,13 @@ function Get-RegistryValueType
     $return
 }
 
+<#
+    .SYNOPSIS
+        Tests that the ValueType is able to be used in a STIG
+
+    .PARAMETER TestValueType
+        The string to test against known good ValueTypes
+#>
 function Test-RegistryValueType
 {
     [CmdletBinding()]
@@ -205,6 +212,8 @@ function Test-RegistryValueType
         if ($TestValueType -match $valueType)
         {
             $return = $valueType
+
+            break
         }
     }
     
