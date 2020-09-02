@@ -1,4 +1,5 @@
 using module .\..\Rule.AccountPolicy\AccountPolicyRule.psm1
+using module .\..\Rule.AuditOnly\AuditOnlyRule.psm1
 using module .\..\Rule.AuditPolicy\AuditPolicyRule.psm1
 using module .\..\Rule.DnsServerRootHint\DnsServerRootHintRule.psm1
 using module .\..\Rule.DnsServerSetting\DnsServerSettingRule.psm1
@@ -39,6 +40,7 @@ class LoadFactory
         switch ($Rule.ParentNode.Name)
         {
             'AccountPolicyRule'                    {$return = [AccountPolicyRule]::new($Rule)}
+            'AuditOnlyRule'                        {$return = [AuditOnlyRule]::new($Rule)}
             'AuditPolicyRule'                      {$return = [AuditPolicyRule]::new($Rule)}
             'DnsServerSettingRule'                 {$return = [DnsServerSettingRule]::new($Rule)}
             'DnsServerRootHintRule'                {$return = [DnsServerRootHintRule]::new($Rule)}

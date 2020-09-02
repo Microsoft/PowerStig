@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [4.5.0] - 2020-09-02
+
+* Update PowerSTIG to include new module to perform audit only tasks for rules [#729](https://github.com/microsoft/PowerStig/issues/729)
+
 ## [4.5.0] - 2020-09-01
 
 * Update PowerSTIG to successfully parse/apply Windows 2012 R2 DC Version 2, Rev 21: [#677](https://github.com/microsoft/PowerStig/issues/677)

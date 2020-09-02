@@ -8,6 +8,10 @@
 # Build output folder
 output/
 
+# Testing folders
+Testing/
+STIGTest/
+
 # Dynamic test folder where class inport code is stored
 .DynamicClassImport/
 

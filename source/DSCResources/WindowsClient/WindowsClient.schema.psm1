@@ -100,6 +100,7 @@ configuration WindowsClient
     Import-DscResource -ModuleName GPRegistryPolicyDsc -ModuleVersion 1.2.0
     Import-DscResource -ModuleName PSDSCresources -ModuleVersion 2.12.0.0
     . "$resourcePath\windows.Script.skip.ps1"
+    . "$resourcePath\windows.Script.AuditOnly.ps1"
     . "$resourcePath\windows.Service.ps1"
     . "$resourcePath\windows.Registry.ps1"
     . "$resourcePath\windows.WindowsOptionalFeature.ps1"

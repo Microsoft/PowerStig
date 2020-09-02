@@ -52,6 +52,30 @@
             <xs:attribute name="dscresourcemodule" type="xs:string" use="required" />
           </xs:complexType>
         </xs:element>
+        <xs:element name="AuditOnlyRule" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Rule" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:all>
+                    <xs:element name="IsNullOrEmpty" type="xs:string" />
+                    <xs:element name="OrganizationValueRequired" type="xs:string" />
+                    <xs:element name="OrganizationValueTestString" type="xs:string" />
+                    <xs:element name="Query" type="xs:string" />
+                    <xs:element name="ExpectedValue" type="xs:string" />
+                    <xs:element name="RawString" type="xs:string" />
+                  </xs:all>
+                  <xs:attribute name="id" type="xs:string" use="required" />
+                  <xs:attribute name="dscresource" type="xs:string" use="required" />
+                  <xs:attribute name="severity" type="xs:string" use="required" />
+                  <xs:attribute name="conversionstatus" type="xs:string" use="required" />
+                  <xs:attribute name="title" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="dscresourcemodule" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
         <xs:element name="DnsServerRootHintRule" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
