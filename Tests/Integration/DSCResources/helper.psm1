@@ -24,6 +24,7 @@ data exceptionRuleParameterValues
         ServiceRule                  = 'StartupType'
         UserRightRule                = 'Identity'
         VsphereAdvancedSettingsRule  = 'AdvancedSettings'
+        SPWebAppGeneralSettingsRule  = 'PropertyValue'
     }
 }
 #endregion
@@ -164,6 +165,10 @@ function Get-ResourceMatchStatement
         'VsphereVssSecurityRule'
         {
             return '\[VMHostVssSecurity\]'
+        }
+        'SPWebAppGeneralSettingsRule' 
+        {
+            return '\[SPWebAppGeneralSettings\]'
         }
     }
 }

@@ -1,0 +1,1014 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type='text/xsl' href='STIG_unclass.xsl'?><Benchmark xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cpe="http://cpe.mitre.org/language/2.0" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" id="Sharepoint_2013_STIG" xml:lang="en" xsi:schemaLocation="http://checklists.nist.gov/xccdf/1.1 http://nvd.nist.gov/schema/xccdf-1.1.4.xsd http://cpe.mitre.org/dictionary/2.0 http://cpe.mitre.org/files/cpe-dictionary_2.1.xsd" xmlns="http://checklists.nist.gov/xccdf/1.1"><status date="2019-09-30">accepted</status><title>MS SharePoint 2013 Security Technical Implementation Guide</title><description>Developed by Microsoft in coordination with DISA for use in the DoD. Comments or proposed revisions to this document should be sent via e-mail to the following address: disa.stig_spt@mail.mil.</description><notice id="terms-of-use" xml:lang="en"></notice><reference href="http://iase.disa.mil"><dc:publisher>DISA</dc:publisher><dc:source>STIG.DOD.MIL</dc:source></reference><plain-text id="release-info">Release: 8 Benchmark Date: 25 Oct 2019</plain-text><version>1</version><Profile id="MAC-1_Classified"><title>I - Mission Critical Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-59919" selected="true" /><select idref="V-59935" selected="true" /><select idref="V-59937" selected="true" /><select idref="V-59939" selected="true" /><select idref="V-59941" selected="true" /><select idref="V-59943" selected="true" /><select idref="V-59945" selected="true" /><select idref="V-59947" selected="true" /><select idref="V-59949" selected="true" /><select idref="V-59953" selected="true" /><select idref="V-59955" selected="true" /><select idref="V-59957" selected="true" /><select idref="V-59961" selected="true" /><select idref="V-59963" selected="true" /><select idref="V-59965" selected="true" /><select idref="V-59967" selected="true" /><select idref="V-59969" selected="true" /><select idref="V-59971" selected="true" /><select idref="V-59973" selected="true" /><select idref="V-59975" selected="true" /><select idref="V-59977" selected="true" /><select idref="V-59979" selected="true" /><select idref="V-59981" selected="true" /><select idref="V-59983" selected="true" /><select idref="V-59985" selected="true" /><select idref="V-59987" selected="true" /><select idref="V-59989" selected="true" /><select idref="V-59991" selected="true" /><select idref="V-59993" selected="true" /><select idref="V-59995" selected="true" /><select idref="V-59997" selected="true" /><select idref="V-59999" selected="true" /><select idref="V-60001" selected="true" /><select idref="V-60003" selected="true" /><select idref="V-60005" selected="true" /><select idref="V-60007" selected="true" /><select idref="V-60009" selected="true" /><select idref="V-60011" selected="true" /><select idref="V-60391" selected="true" /></Profile><Profile id="MAC-1_Public"><title>I - Mission Critical Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-59919" selected="true" /><select idref="V-59935" selected="true" /><select idref="V-59937" selected="true" /><select idref="V-59939" selected="true" /><select idref="V-59941" selected="true" /><select idref="V-59943" selected="true" /><select idref="V-59945" selected="true" /><select idref="V-59947" selected="true" /><select idref="V-59949" selected="true" /><select idref="V-59953" selected="true" /><select idref="V-59955" selected="true" /><select idref="V-59957" selected="true" /><select idref="V-59961" selected="true" /><select idref="V-59963" selected="true" /><select idref="V-59965" selected="true" /><select idref="V-59967" selected="true" /><select idref="V-59969" selected="true" /><select idref="V-59971" selected="true" /><select idref="V-59973" selected="true" /><select idref="V-59975" selected="true" /><select idref="V-59977" selected="true" /><select idref="V-59979" selected="true" /><select idref="V-59981" selected="true" /><select idref="V-59983" selected="true" /><select idref="V-59985" selected="true" /><select idref="V-59987" selected="true" /><select idref="V-59989" selected="true" /><select idref="V-59991" selected="true" /><select idref="V-59993" selected="true" /><select idref="V-59995" selected="true" /><select idref="V-59997" selected="true" /><select idref="V-59999" selected="true" /><select idref="V-60001" selected="true" /><select idref="V-60003" selected="true" /><select idref="V-60005" selected="true" /><select idref="V-60007" selected="true" /><select idref="V-60009" selected="true" /><select idref="V-60011" selected="true" /><select idref="V-60391" selected="true" /></Profile><Profile id="MAC-1_Sensitive"><title>I - Mission Critical Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-59919" selected="true" /><select idref="V-59935" selected="true" /><select idref="V-59937" selected="true" /><select idref="V-59939" selected="true" /><select idref="V-59941" selected="true" /><select idref="V-59943" selected="true" /><select idref="V-59945" selected="true" /><select idref="V-59947" selected="true" /><select idref="V-59949" selected="true" /><select idref="V-59953" selected="true" /><select idref="V-59955" selected="true" /><select idref="V-59957" selected="true" /><select idref="V-59961" selected="true" /><select idref="V-59963" selected="true" /><select idref="V-59965" selected="true" /><select idref="V-59967" selected="true" /><select idref="V-59969" selected="true" /><select idref="V-59971" selected="true" /><select idref="V-59973" selected="true" /><select idref="V-59975" selected="true" /><select idref="V-59977" selected="true" /><select idref="V-59979" selected="true" /><select idref="V-59981" selected="true" /><select idref="V-59983" selected="true" /><select idref="V-59985" selected="true" /><select idref="V-59987" selected="true" /><select idref="V-59989" selected="true" /><select idref="V-59991" selected="true" /><select idref="V-59993" selected="true" /><select idref="V-59995" selected="true" /><select idref="V-59997" selected="true" /><select idref="V-59999" selected="true" /><select idref="V-60001" selected="true" /><select idref="V-60003" selected="true" /><select idref="V-60005" selected="true" /><select idref="V-60007" selected="true" /><select idref="V-60009" selected="true" /><select idref="V-60011" selected="true" /><select idref="V-60391" selected="true" /></Profile><Profile id="MAC-2_Classified"><title>II - Mission Support Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-59919" selected="true" /><select idref="V-59935" selected="true" /><select idref="V-59937" selected="true" /><select idref="V-59939" selected="true" /><select idref="V-59941" selected="true" /><select idref="V-59943" selected="true" /><select idref="V-59945" selected="true" /><select idref="V-59947" selected="true" /><select idref="V-59949" selected="true" /><select idref="V-59953" selected="true" /><select idref="V-59955" selected="true" /><select idref="V-59957" selected="true" /><select idref="V-59961" selected="true" /><select idref="V-59963" selected="true" /><select idref="V-59965" selected="true" /><select idref="V-59967" selected="true" /><select idref="V-59969" selected="true" /><select idref="V-59971" selected="true" /><select idref="V-59973" selected="true" /><select idref="V-59975" selected="true" /><select idref="V-59977" selected="true" /><select idref="V-59979" selected="true" /><select idref="V-59981" selected="true" /><select idref="V-59983" selected="true" /><select idref="V-59985" selected="true" /><select idref="V-59987" selected="true" /><select idref="V-59989" selected="true" /><select idref="V-59991" selected="true" /><select idref="V-59993" selected="true" /><select idref="V-59995" selected="true" /><select idref="V-59997" selected="true" /><select idref="V-59999" selected="true" /><select idref="V-60001" selected="true" /><select idref="V-60003" selected="true" /><select idref="V-60005" selected="true" /><select idref="V-60007" selected="true" /><select idref="V-60009" selected="true" /><select idref="V-60011" selected="true" /><select idref="V-60391" selected="true" /></Profile><Profile id="MAC-2_Public"><title>II - Mission Support Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-59919" selected="true" /><select idref="V-59935" selected="true" /><select idref="V-59937" selected="true" /><select idref="V-59939" selected="true" /><select idref="V-59941" selected="true" /><select idref="V-59943" selected="true" /><select idref="V-59945" selected="true" /><select idref="V-59947" selected="true" /><select idref="V-59949" selected="true" /><select idref="V-59953" selected="true" /><select idref="V-59955" selected="true" /><select idref="V-59957" selected="true" /><select idref="V-59961" selected="true" /><select idref="V-59963" selected="true" /><select idref="V-59965" selected="true" /><select idref="V-59967" selected="true" /><select idref="V-59969" selected="true" /><select idref="V-59971" selected="true" /><select idref="V-59973" selected="true" /><select idref="V-59975" selected="true" /><select idref="V-59977" selected="true" /><select idref="V-59979" selected="true" /><select idref="V-59981" selected="true" /><select idref="V-59983" selected="true" /><select idref="V-59985" selected="true" /><select idref="V-59987" selected="true" /><select idref="V-59989" selected="true" /><select idref="V-59991" selected="true" /><select idref="V-59993" selected="true" /><select idref="V-59995" selected="true" /><select idref="V-59997" selected="true" /><select idref="V-59999" selected="true" /><select idref="V-60001" selected="true" /><select idref="V-60003" selected="true" /><select idref="V-60005" selected="true" /><select idref="V-60007" selected="true" /><select idref="V-60009" selected="true" /><select idref="V-60011" selected="true" /><select idref="V-60391" selected="true" /></Profile><Profile id="MAC-2_Sensitive"><title>II - Mission Support Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-59919" selected="true" /><select idref="V-59935" selected="true" /><select idref="V-59937" selected="true" /><select idref="V-59939" selected="true" /><select idref="V-59941" selected="true" /><select idref="V-59943" selected="true" /><select idref="V-59945" selected="true" /><select idref="V-59947" selected="true" /><select idref="V-59949" selected="true" /><select idref="V-59953" selected="true" /><select idref="V-59955" selected="true" /><select idref="V-59957" selected="true" /><select idref="V-59961" selected="true" /><select idref="V-59963" selected="true" /><select idref="V-59965" selected="true" /><select idref="V-59967" selected="true" /><select idref="V-59969" selected="true" /><select idref="V-59971" selected="true" /><select idref="V-59973" selected="true" /><select idref="V-59975" selected="true" /><select idref="V-59977" selected="true" /><select idref="V-59979" selected="true" /><select idref="V-59981" selected="true" /><select idref="V-59983" selected="true" /><select idref="V-59985" selected="true" /><select idref="V-59987" selected="true" /><select idref="V-59989" selected="true" /><select idref="V-59991" selected="true" /><select idref="V-59993" selected="true" /><select idref="V-59995" selected="true" /><select idref="V-59997" selected="true" /><select idref="V-59999" selected="true" /><select idref="V-60001" selected="true" /><select idref="V-60003" selected="true" /><select idref="V-60005" selected="true" /><select idref="V-60007" selected="true" /><select idref="V-60009" selected="true" /><select idref="V-60011" selected="true" /><select idref="V-60391" selected="true" /></Profile><Profile id="MAC-3_Classified"><title>III - Administrative Classified</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-59919" selected="true" /><select idref="V-59935" selected="true" /><select idref="V-59937" selected="true" /><select idref="V-59939" selected="true" /><select idref="V-59941" selected="true" /><select idref="V-59943" selected="true" /><select idref="V-59945" selected="true" /><select idref="V-59947" selected="true" /><select idref="V-59949" selected="true" /><select idref="V-59953" selected="true" /><select idref="V-59955" selected="true" /><select idref="V-59957" selected="true" /><select idref="V-59961" selected="true" /><select idref="V-59963" selected="true" /><select idref="V-59965" selected="true" /><select idref="V-59967" selected="true" /><select idref="V-59969" selected="true" /><select idref="V-59971" selected="true" /><select idref="V-59973" selected="true" /><select idref="V-59975" selected="true" /><select idref="V-59977" selected="true" /><select idref="V-59979" selected="true" /><select idref="V-59981" selected="true" /><select idref="V-59983" selected="true" /><select idref="V-59985" selected="true" /><select idref="V-59987" selected="true" /><select idref="V-59989" selected="true" /><select idref="V-59991" selected="true" /><select idref="V-59993" selected="true" /><select idref="V-59995" selected="true" /><select idref="V-59997" selected="true" /><select idref="V-59999" selected="true" /><select idref="V-60001" selected="true" /><select idref="V-60003" selected="true" /><select idref="V-60005" selected="true" /><select idref="V-60007" selected="true" /><select idref="V-60009" selected="true" /><select idref="V-60011" selected="true" /><select idref="V-60391" selected="true" /></Profile><Profile id="MAC-3_Public"><title>III - Administrative Public</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-59919" selected="true" /><select idref="V-59935" selected="true" /><select idref="V-59937" selected="true" /><select idref="V-59939" selected="true" /><select idref="V-59941" selected="true" /><select idref="V-59943" selected="true" /><select idref="V-59945" selected="true" /><select idref="V-59947" selected="true" /><select idref="V-59949" selected="true" /><select idref="V-59953" selected="true" /><select idref="V-59955" selected="true" /><select idref="V-59957" selected="true" /><select idref="V-59961" selected="true" /><select idref="V-59963" selected="true" /><select idref="V-59965" selected="true" /><select idref="V-59967" selected="true" /><select idref="V-59969" selected="true" /><select idref="V-59971" selected="true" /><select idref="V-59973" selected="true" /><select idref="V-59975" selected="true" /><select idref="V-59977" selected="true" /><select idref="V-59979" selected="true" /><select idref="V-59981" selected="true" /><select idref="V-59983" selected="true" /><select idref="V-59985" selected="true" /><select idref="V-59987" selected="true" /><select idref="V-59989" selected="true" /><select idref="V-59991" selected="true" /><select idref="V-59993" selected="true" /><select idref="V-59995" selected="true" /><select idref="V-59997" selected="true" /><select idref="V-59999" selected="true" /><select idref="V-60001" selected="true" /><select idref="V-60003" selected="true" /><select idref="V-60005" selected="true" /><select idref="V-60007" selected="true" /><select idref="V-60009" selected="true" /><select idref="V-60011" selected="true" /><select idref="V-60391" selected="true" /></Profile><Profile id="MAC-3_Sensitive"><title>III - Administrative Sensitive</title><description>&lt;ProfileDescription&gt;&lt;/ProfileDescription&gt;</description><select idref="V-59919" selected="true" /><select idref="V-59935" selected="true" /><select idref="V-59937" selected="true" /><select idref="V-59939" selected="true" /><select idref="V-59941" selected="true" /><select idref="V-59943" selected="true" /><select idref="V-59945" selected="true" /><select idref="V-59947" selected="true" /><select idref="V-59949" selected="true" /><select idref="V-59953" selected="true" /><select idref="V-59955" selected="true" /><select idref="V-59957" selected="true" /><select idref="V-59961" selected="true" /><select idref="V-59963" selected="true" /><select idref="V-59965" selected="true" /><select idref="V-59967" selected="true" /><select idref="V-59969" selected="true" /><select idref="V-59971" selected="true" /><select idref="V-59973" selected="true" /><select idref="V-59975" selected="true" /><select idref="V-59977" selected="true" /><select idref="V-59979" selected="true" /><select idref="V-59981" selected="true" /><select idref="V-59983" selected="true" /><select idref="V-59985" selected="true" /><select idref="V-59987" selected="true" /><select idref="V-59989" selected="true" /><select idref="V-59991" selected="true" /><select idref="V-59993" selected="true" /><select idref="V-59995" selected="true" /><select idref="V-59997" selected="true" /><select idref="V-59999" selected="true" /><select idref="V-60001" selected="true" /><select idref="V-60003" selected="true" /><select idref="V-60005" selected="true" /><select idref="V-60007" selected="true" /><select idref="V-60009" selected="true" /><select idref="V-60011" selected="true" /><select idref="V-60391" selected="true" /></Profile><Group id="V-59919"><title>SRG-APP-000003</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74349r1_rule" severity="medium" weight="10.0"><version>SP13-00-000005</version><title>SharePoint must support the requirement to initiate a session lock after 15 minutes of system or application inactivity has transpired.</title><description>&lt;VulnDiscussion&gt;A session time-out lock is a temporary action taken when a user stops work and moves away from the immediate physical vicinity of the information system but does not log out because of the temporary nature of the absence. Rather than relying on the user to manually lock their application session prior to vacating the vicinity, applications need to be able to identify when a user's application session has idled and take action to initiate the session lock.
+
+The session lock is implemented at the point where session activity can be determined and/or controlled. This is typically at the operating system level and results in a system lock, but it may be at the application level, where the application interface window is secured instead. The organization defines the period of inactivity that shall pass before a session lock is initiated, so this must be configurable.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000057</ident><fixtext fixref="F-65327r2_fix">Configure the SharePoint server to lock the session lock after 15 minutes of inactivity.
+
+In SharePoint Central Administration, click Application Management. 
+
+On the Application Management page, in the Web Applications section, click Manage web applications. 
+
+Perform the following steps for each web application.
+- Select web application.
+- Select General Settings &gt;&gt; General Settings.
+- Navigate to Web Page Security Validation.
+- Set the "Security validation is:" property to On.
+- Set the "Security validation expires:" property to After.
+- Set the default time-out period to 15 minutes or less.
+- Select OK to save settings.</fixtext><fix id="F-65327r2_fix" /><check system="C-60607r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Review the SharePoint server configuration to ensure a session lock occurs after 15 minutes of inactivity.
+
+In SharePoint Central Administration, click Application Management. 
+
+On the Application Management page, in the Web Applications section, click Manage web applications. 
+
+Verify that each web application meets this requirement.
+- Select the web application.
+- Select General Settings &gt;&gt; General Settings.
+- Navigate to the Web Page Security Validation section.
+- Verify that the Security Validation is "On" and set to expire after 15 minutes or less. 
+
+If Security Validation is "Off" or if the default time-out period is not set to 15 minutes or less for any of the web applications, this is a finding.</check-content></check></Rule></Group><Group id="V-59935"><title>SRG-APP-000006</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74365r1_rule" severity="medium" weight="10.0"><version>SP13-00-000010</version><title>SharePoint must maintain and support the use of security attributes with stored information.</title><description>&lt;VulnDiscussion&gt;Security attributes are abstractions representing the basic properties or characteristics of an entity (e.g., subjects and objects) with respect to safeguarding information.
+
+These attributes are typically associated with internal data structures (e.g., records, buffers, files) within the information system and are used to enable the implementation of access control and flow control policies, reflect special dissemination, handling or distribution instructions, or support other aspects of the information security policy.
+
+One example includes marking data as classified or FOUO. These security attributes may be assigned manually or during data processing, but, either way, it is imperative these assignments are maintained while the data is in storage. If the security attributes are lost when the data is stored, there is the risk of a data compromise.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-65345r2_fix">Configure the SharePoint server to maintain and support the use of security attributes with stored information.
+
+From the Site Collection Settings menu:
+Add a column to Content Types that can hold "security attributes", e.g., FOUO, etc., and "prompt the user to enter as metadata or properties to collect when documents of this content type are added to SharePoint."</fixtext><fix id="F-65345r2_fix" /><check system="C-60625r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Review the SharePoint server to ensure the use of security attributes with stored information is maintained.
+
+Click Site Settings. 
+
+Under the Web Designer Galleries menu, click Site Content Types. 
+
+Define a set of Content Types that can hold "security attributes", e.g., FOUO, etc. 
+
+For each required Content Type, under "Change Content Type Column" ensure "Required (Must contain information) is selected. Otherwise, this is a finding.</check-content></check></Rule></Group><Group id="V-59937"><title>SRG-APP-000014</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74367r2_rule" severity="high" weight="10.0"><version>SP13-00-000015</version><title>SharePoint must utilize approved cryptography to protect the confidentiality of remote access sessions.</title><description>&lt;VulnDiscussion&gt;Remote access is any access to an organizational information system by a user (or an information system) communicating through an external, non-organization-controlled network (e.g., the Internet). Examples of remote access methods include dial-up, broadband, and wireless.
+
+Remote network access is accomplished by leveraging common communication protocols and establishing a remote connection. These connections will typically occur over either the public Internet or the Public Switched Telephone Network (PSTN). Since neither of these Internetworking mechanisms are private nor secure, if cryptography is not used, then the session data traversing the remote connection could be intercepted and compromised. Cryptography provides a means to secure the remote connection to prevent unauthorized access to the data traversing the remote access connection, thereby providing a degree of confidentiality. The encryption strength of mechanism is selected based on the security categorization of the information traversing the remote connection.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000068</ident><fixtext fixref="F-65347r3_fix">Configure the SharePoint server to use approved cryptography to protect the confidentiality of remote access sessions.
+
+Open IIS Manager.
+
+In the Connections pane, expand "Sites".
+
+Click the "Web Application" site.
+
+In the Actions pane, click "Bindings".
+
+In the Site Bindings window, click "Add".
+
+In the Add Site Binding window, change "Type" to "https", and select the site's SSL certificate. Click "OK".
+
+Remove all bindings that do not use https.
+
+Click "Close".</fixtext><fix id="F-65347r3_fix" /><check system="C-60627r4_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Review the SharePoint server configuration to ensure approved cryptography is being utilized to protect the confidentiality of remote access sessions.
+
+Navigate to Central Administration.
+
+Under “System Settings”, click “Configure Alternate Access mappings”.
+
+Review the “Public URL for zone” column values. If any URL does not begin with “https”, this is a finding.</check-content></check></Rule></Group><Group id="V-59939"><title>SRG-APP-000015</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74369r2_rule" severity="high" weight="10.0"><version>SP13-00-000020</version><title>SharePoint must use cryptography to protect the integrity of the remote access session.</title><description>&lt;VulnDiscussion&gt;Remote access is any access to an organizational information system by a user (or an information system) communicating through an external, non-organization-controlled network (e.g., the Internet). Examples of remote access methods include dial-up, broadband, and wireless.
+
+Remote network access is accomplished by leveraging common communication protocols and establishing a remote connection. These connections will typically occur over the public Internet, the Public Switched Telephone Network (PSTN), or sometimes both. Since neither of these Internetworking mechanisms are private nor secure, if cryptography is not used, then the session data traversing the remote connection could be intercepted and potentially modified. Cryptography provides a means to secure the remote connection to prevent unauthorized access to the data traversing the remote access connection, thereby providing a degree of integrity. The encryption strength of a mechanism is selected based on the security categorization of the information traversing the remote connection.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001453</ident><fixtext fixref="F-65349r3_fix">Configure the SharePoint server configuration to use cryptography to protect the integrity of the remote access session.
+
+Open IIS Manager.
+
+In the Connections pane, expand "Sites".
+
+Click the "Web Application" site.
+
+In the Actions pane, click "Bindings".
+
+In the Site Bindings window, click "Add".
+
+In the Add Site Binding window, change "Type" to "https", and select the site's SSL certificate. Click "OK".
+
+Remove all bindings that do not use https.
+
+Click "Close".</fixtext><fix id="F-65349r3_fix" /><check system="C-60629r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Review the SharePoint server configuration to ensure cryptography is being used to protect the integrity of the remote access session.
+
+Navigate to Central Administration.
+
+Under “System Settings”, click “Configure Alternate Access mappings”.
+
+Review the “Public URL for zone” column values. If any URL does not begin with “https”, this is a finding.</check-content></check></Rule></Group><Group id="V-59941"><title>SRG-APP-000019</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74371r1_rule" severity="medium" weight="10.0"><version>SP13-00-000025</version><title>SharePoint must ensure remote sessions for accessing security functions and security-relevant information are audited.</title><description>&lt;VulnDiscussion&gt;Remote access is any access to an organizational information system by a user (or an information system) communicating through an external, non-organization-controlled network (e.g., the Internet). Examples of remote access methods include dial-up, broadband, and wireless.
+
+Remote network and system access is accomplished by leveraging common communication protocols to establish a remote connection. These connections will typically originate over either the public Internet or the Public Switched Telephone Network (PSTN). Neither of these Internetworking mechanisms is private or secure, and they do not, by default, restrict access to networked resources once connectivity is established.
+
+Numerous best practices are employed to protect remote connections, such as utilizing encryption to protect data sessions and firewalls to restrict and control network connectivity. In addition to these protections, auditing must also be utilized in order to track system activity, assist in diagnosing system issues and provide evidence needed for forensic investigations post security incident.
+
+When organizations define security-related application functions or security-related application information, it is incumbent upon the application providing access to that data to ensure auditing of remote connectivity to those resources occurs in support of organizational requirements.
+
+Remote access to security functions (e.g., user management, audit log management, etc.) and security-relevant information requires the activity be audited by the organization. Any application providing remote access must support organizational requirements to audit access or organization-defined security functions and security-relevant information.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000067</ident><fixtext fixref="F-65351r2_fix">Configure the SharePoint server configuration to audit remote sessions for accessing security functions and security-relevant information.
+
+In Central Administration, click on Security.
+
+On the Security page, in the Information policy list, click "Configure information rights management".
+
+Select "Use the default RMS server specified in Active Directory", or identify a specific server by selecting "Use this RMS server:" and entering the server name.
+
+Configure information management policies in accordance with the system security plan requirements.</fixtext><fix id="F-65351r2_fix" /><check system="C-60631r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Review the SharePoint server configuration to ensure remote sessions for accessing security functions and security-relevant information are audited.
+
+Verify that SharePoint audit settings are configured at the site collection level in accordance with your system security plan.
+
+To verify audit settings at the site collection level for each site collection level subject to auditing per the SSP:
+
+Click Settings &gt;&gt; Site settings.
+
+If not at the root of your site collection, under Site Collection Administration, click Go to top level site settings. (Note: The Site Collection Administration section will not be available if you do not have the necessary permissions)
+
+On the Site Settings page, under Site Collection Administration, click Site collection audit settings.
+
+On the Configure Audit Settings page verify the events that are required to audit are selected, and then click OK. If nothing is selected, or the selected criteria do not match the SSP, this is a finding.</check-content></check></Rule></Group><Group id="V-59943"><title>SRG-APP-000039</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74373r1_rule" severity="high" weight="10.0"><version>SP13-00-000030</version><title>SharePoint must enforce approved authorizations for controlling the flow of information between interconnected systems in accordance with applicable policy.</title><description>&lt;VulnDiscussion&gt;Information flow control regulates where information is allowed to travel within an information system and between information systems (as opposed to who is allowed to access the information) and without explicit regard to subsequent accesses to that information.
+
+From an application perspective, flow control is established once application data flow modeling has been completed. Data flow modeling can be described as the process of identifying, modeling, and documenting how data moves around an information system. Data flow modeling examines processes (activities that transform data from one form to another), data stores (the holding areas for data), external entities (what sends data into a system or receives data from a system), and data flows (routes by which data can flow).
+
+Once the application data flows have been identified, corresponding flow controls can be applied at the appropriate points.
+
+A few examples of flow control restrictions include the following: keeping export-controlled information from being transmitted in the clear to the Internet and blocking information that is marked as classified but is being transported to an unapproved destination. Information flow control policies and enforcement mechanisms are commonly employed by organizations to control the flow of information between designated sources and destinations (e.g., networks, individuals, devices) within information systems and between interconnected systems. Flow control is based on the characteristics of the information and/or the information path.
+
+Application-specific examples of flow control enforcement can be found in information protection software (e.g., guards, proxies, gateways, and cross domain solutions) employing rule sets or establishing configuration settings restricting information system services or providing message-filtering capability based on content (e.g., using key word searches or document characteristics).
+
+Applications providing information flow control must be able to enforce approved authorizations for controlling the flow of information between interconnected systems in accordance with applicable policy.
+
+SharePoint Central Administrator is a powerful management tool used to administer the farm. This server should be installed on a trusted network segment. This server should be used to run required services rather than user-oriented web applications.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001414</ident><fixtext fixref="F-65353r1_fix">Configure the SharePoint server to enforce approved authorizations for controlling the flow of information between interconnected systems in accordance with applicable policy.
+
+Remove the application server from the DMZ.</fixtext><fix id="F-65353r1_fix" /><check system="C-60633r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Review the SharePoint server configuration to ensure approved authorizations for controlling the flow of information between interconnected systems in accordance with applicable policy are enforced.
+
+Inspect the logical location of the server farm web front end servers on a network diagram.
+
+Verify the Central Administration site is not installed on a server located in a DMZ or other publicly accessible segment of the network.
+
+If Central Administrator is installed on a publicly facing SharePoint server, this is a finding.</check-content></check></Rule></Group><Group id="V-59945"><title>SRG-APP-000043</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74375r2_rule" severity="medium" weight="10.0"><version>SP13-00-000035</version><title>SharePoint must identify data type, specification, and usage when transferring information between different security domains so policy restrictions may be applied.</title><description>&lt;VulnDiscussion&gt;Information flow control regulates where information is allowed to travel within an information system and between information systems (as opposed to who is allowed to access the information) and without explicit regard to subsequent accesses to that information.
+
+An example of flow control restrictions includes the following: keeping export-controlled information from being transmitted in the clear to the Internet. Information flow control policies and enforcement mechanisms are commonly employed by organizations to control the flow of information between designated sources and destinations (e.g., users, networks, devices) within information systems and between interconnected systems.
+
+Application-specific examples of flow control enforcement can be found in information protection software (e.g., guards, proxies, application layer gateways, and cross domain solutions) employing rule sets or establishing configuration settings restricting information system services or providing message-filtering capability based on content (e.g., using key word searches or document characteristics).
+
+Flow control is based on the characteristics of the information and/or the information path. Applications providing flow control must identify data type, specification, and usage when transferring information between different security domains so policy restrictions may be applied.
+
+A security domain is defined as a domain implementing a security policy and administered by a single authority.
+
+Data type, specification, and usage includes using file naming to reflect the type of data being transferred and limiting data transfer based on file type.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-65355r2_fix">Configure the SharePoint server to identify data type, specification, and usage when transferring information between different security domains so policy restrictions may be applied.
+
+In Central Administration, click Security.
+
+On the Security page, in the Information policy list, click "Configure information rights management".
+
+Select "Use the default RMS server specified in Active Directory" or identify a specific server by selecting "Use this RMS server:" and entering the server name.
+
+Configure information management policies in accordance with the system security plan requirements.</fixtext><fix id="F-65355r2_fix" /><check system="C-60635r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Note: If no data is exchanged between different security domains, and has been documented by the Data Owner, IRM is not required. This requirement is Not Applicable.
+
+Review the SharePoint server configuration to ensure data type, specification, and usage when transferring information between different security domains are identified so policy restrictions may be applied.
+
+An IRM must be enabled in SharePoint. The Windows Rights Management Services (RMS) (or a comparable IRM product) can either be located through Active Directory or specified.
+
+In Central Administration, click Security.
+
+On the Security page, in the Information policy list, click "Configure information rights management".
+
+If "Do not use IRM on this server" is selected, or if a configuration error message is displayed (such as "... IRM will not work until the client is configured properly"), this is a finding.</check-content></check></Rule></Group><Group id="V-59947"><title>SRG-APP-000047</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74377r2_rule" severity="medium" weight="10.0"><version>SP13-00-000040</version><title>SharePoint must provide the ability to prohibit the transfer of unsanctioned information in accordance with security policy.</title><description>&lt;VulnDiscussion&gt;The application enforces approved authorizations for controlling the flow of information within the system and between interconnected systems in accordance with applicable policy.
+
+Information flow control regulates where information is allowed to travel within an information system and between information systems (as opposed to who is allowed to access the information) and without explicit regard to subsequent accesses to that information.
+
+Specific examples of flow control enforcement can be found in boundary protection devices (e.g., proxies, gateways, guards, encrypted tunnels, firewalls, and routers) employing rule sets or establishing configuration settings restricting information system services, providing a packet-filtering capability based on header information or message-filtering capability based on content (e.g., using key word searches or document characteristics).
+
+Actions to support this requirement include, but are not limited to checking all transferred information for malware, implementing dirty word list searches on transferred information, and applying the same protection measures to metadata (e.g., security attributes) that is applied to the information payload.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001374</ident><fixtext fixref="F-65357r2_fix">Configure the SharePoint server to prohibit the transfer of unsanctioned information in accordance with security policy.
+
+In Central Administration, click Security.
+
+On the Security page, in the Information policy list, click "Configure information rights management".
+
+Select "Use the default RMS server specified in Active Directory", or identify a specific server by selecting "Use this RMS server:" and entering the server name.
+
+Configure information management policies in accordance with the system security plan requirements.</fixtext><fix id="F-65357r2_fix" /><check system="C-60637r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Note: If no unsanctioned information is transferred, and has been documented by the Data Owner, IRM is not required. This requirement is Not Applicable.
+
+Review the SharePoint server configuration to ensure the transfer of unsanctioned information in accordance with security policy is prohibited.
+
+An IRM must be enabled in SharePoint. The Windows Rights Management Services (RMS) (or a comparable IRM product) can either be located through Active Directory or specified.
+
+In Central Administration, click Security.
+
+On the Security page, in the Information policy list, click "Configure information rights management".
+
+If "Do not use IRM on this server" is selected or if a configuration error message is displayed (such as "... IRM will not work until the client is configured properly"), this is a finding.</check-content></check></Rule></Group><Group id="V-59949"><title>SRG-APP-000068</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74379r2_rule" severity="medium" weight="10.0"><version>SP13-00-000045</version><title>SharePoint must display an approved system use notification message or banner before granting access to the system.</title><description>&lt;VulnDiscussion&gt;Applications are required to display an approved system use notification message or banner before granting access to the system providing privacy and security notices consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance and stating that:
+
+(i) users are accessing a U.S. Government information system;
+(ii) system usage may be monitored, recorded, and subject to audit;
+(iii) unauthorized use of the system is prohibited and subject to criminal and civil penalties; and
+(iv) the use of the system indicates consent to monitoring and recording.
+
+System use notification messages can be implemented in the form of warning banners displayed when individuals log on to the information system.
+
+System use notification is intended only for information system access including an interactive logon interface with a human user and is not intended to require notification when an interactive interface does not exist.
+
+Use this banner for desktops, laptops, and other devices accommodating banners of 1300 characters. The banner shall be implemented as a click-through banner at logon (to the extent permitted by the operating system), meaning it prevents further activity on the information system unless and until the user executes a positive action to manifest agreement by clicking on a box indicating "OK".&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000048</ident><fixtext fixref="F-65359r1_fix">Configure the SharePoint web application's home page to display the authorized DoD warning banner text on or before the logon page.</fixtext><fix id="F-65359r1_fix" /><check system="C-60639r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Review the SharePoint server configuration to ensure an approved system use notification message or banner is displayed before granting access to the system.
+Banner application occurs on a per-Web Application basis:
+Obtain a listing of all SharePoint Web applications.
+Open a Web browser and navigate to the SharePoint Web application home page.
+Verify the authorized DoD warning banner text is displayed on the SharePoint web application home page.
+If the authorized DoD warning banner text is not displayed on the first screen of the SharePoint web application, this is a finding.
+
+Note: Supplementary Information: DoD Logon Banner
+"You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only.
+By using this IS (which includes any device attached to this IS), you consent to the following conditions:
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.
+-At any time, the USG may inspect and seize data stored on this IS.
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."</check-content></check></Rule></Group><Group id="V-59953"><title>SRG-APP-000090</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74383r1_rule" severity="medium" weight="10.0"><version>SP13-00-000055</version><title>SharePoint must allow designated organizational personnel to select which auditable events are to be audited by specific components of the system.</title><description>&lt;VulnDiscussion&gt;Audit records can be generated from various components within the information system, such as network interfaces, hard disks, modems, etc. From an application perspective, certain specific application functionalities may be audited as well.
+
+The list of audited events is the set of events for which audits are to be generated. This set of events is typically a subset of the list of all events for which the system is capable of generating audit records (i.e., auditable events, time stamps, source and destination addresses, user/process identifiers, event descriptions, success/fail indications, filenames involved, and access control or flow control rules invoked).
+
+Organizations may define the organizational personnel accountable for determining which application components shall provide auditable events.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000171</ident><fixtext fixref="F-65363r2_fix">Configure the SharePoint server configuration to allow designated organizational personnel to select which auditable events are to be audited by specific components of the system.
+
+Navigate to Central Administration.
+
+Click "Monitoring".
+
+Click "Configure Diagnostic Logging".
+
+Select the event categories and trace levels to match those defined by the organization's system security plan.
+
+Remember that a base set of events is always audited.
+
+Click "Ok".</fixtext><fix id="F-65363r2_fix" /><check system="C-60643r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Review the SharePoint server configuration to ensure designated organizational personnel are allowed to select which auditable events are to be audited by specific components of the system.
+
+Navigate to Central Administration.
+
+Click "Monitoring".
+
+Click "Configure Diagnostic Logging".
+
+Validate that the selected event categories and trace levels match those defined by the organization's system security plan.
+
+Remember that a base set of events are always audited.
+
+If the selected event categories/trace levels are inconsistent with those defined in the organization's system security plan, this is a finding.</check-content></check></Rule></Group><Group id="V-59955"><title>SRG-APP-000106</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74385r1_rule" severity="medium" weight="10.0"><version>SP13-00-000060</version><title>SharePoint must reject or delay, as defined by the organization, network traffic generated above configurable traffic volume thresholds.</title><description>&lt;VulnDiscussion&gt;It is critical when a system is at risk of failing to process audit logs as required; actions are automatically taken to mitigate the failure or risk of failure.
+
+One method used to thwart the auditing system is for an attacker to attempt to overwhelm the auditing system with large amounts of irrelevant data. The end result is audit logs that are either overwritten and activity thereby erased or disk space that is exhausted and any future activity is no longer logged.
+
+In many system configurations, the disk space allocated to the auditing system is separate from the disks allocated for the operating system; therefore, this may not result in a system outage.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-65365r2_fix">Configure SharePoint to reject or delay, as defined by the organization or site SSP, network traffic generated above configurable traffic volume thresholds.
+
+Log on to the server.
+
+Click Start.
+
+Type Internet Information Services Manager in the Search Bar, click Enter.
+
+Determine which IIS Sites are subject to user traffic. This is generally the IIS site hosting the Content Web Application.
+
+For each site IIS site subject to user traffic, select the site.
+
+Click Advanced Settings.
+
+Expand Connection Limits.
+
+Ensure the following settings possess a value:
+-Connection Time-Out
+-Maximum Bandwidth
+-Maximum Concurrent Connections
+
+Repeat steps for each site subject to user traffic.</fixtext><fix id="F-65365r2_fix" /><check system="C-60645r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Review the SharePoint server configuration to ensure network traffic generated above configurable traffic volume thresholds, as defined by the organization or site SSP, is rejected or delayed.
+
+Log on to the server.
+
+Click Start.
+
+Type Internet Information Services Manager in the Search Bar, click Enter.
+
+Determine which IIS Sites are subject to user traffic. This is generally the IIS site hosting the Content Web Application.
+
+For each site IIS site subject to user traffic, select the site.
+
+Click Advanced Settings.
+
+Expand Connection Limits.
+
+Ensure the following settings possess a value:
+-Connection Time-Out
+-Maximum Bandwidth
+-Maximum Concurrent Connections
+
+Repeat steps for each site subject to user traffic.
+
+Otherwise, this is a finding.</check-content></check></Rule></Group><Group id="V-59957"><title>SRG-APP-000112</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74387r1_rule" severity="high" weight="10.0"><version>SP13-00-000065</version><title>SharePoint must prevent the execution of prohibited mobile code.</title><description>&lt;VulnDiscussion&gt;Decisions regarding the utilization of mobile code within organizational information systems need to include evaluations that help determine the potential for the code to cause damage to the system if used maliciously.
+
+Mobile code technologies include, for example, Java, JavaScript, ActiveX, PDF, Postscript, Shockwave movies, Flash animations, and VBScript. Usage restrictions and implementation guidance apply to both the selection and use of mobile code installed on organizational servers and mobile code downloaded and executed on individual workstations.
+
+Applications can prevent the execution of prohibited mobile code by leveraging architectures that provide a virtual execution environment sometimes referred to as a "sandbox". The mobile code is executed within this isolated environment apart from the host's indigenous operating environment that allows for mobile code capability restrictions and helps to prevent malicious code from accessing system resources and data.
+
+Policy and procedures related to mobile code address preventing the introduction of unacceptable mobile code within the information system. The DoDI 8552.01 policy pertains to the use of mobile code technologies within DoD information systems.
+
+The application must prevent the execution of prohibited mobile code.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001695</ident><fixtext fixref="F-65367r2_fix">Configure SharePoint to prevent the execution of prohibited mobile code.
+
+Navigate to Central Administration.
+
+Click Manage Web Applications.
+
+For each Web Application in the Farm:
+-Click on the Web Application to configure.
+-Click on the drop-down box below General Settings.
+-Click on General Settings in the drop down box.
+-Under Browser File Handling, verify that "Strict" is selected.
+
+If "Strict" is not selected, this is a finding.
+
+Mobile code can be further restricted to meet the policy of the organization:
+
+Log on to a farm server hosting Central Administration.
+
+Click Start and type SharePoint 2013 Management Shell followed by Enter.
+
+Type $webApp = Get-SPWebApplication -Identity {URL} where {URL is the {URL} of the web application to configure.
+
+Press Enter.
+
+Type $webApp.AllowedInlineDownloadedMimeTypes. Remove ({mime type}) where {mime type} represents the mime type to remove (e.g., application\x-shockwave-flash).
+
+Press Enter.</fixtext><fix id="F-65367r2_fix" /><check system="C-60647r3_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Review the SharePoint server configuration to ensure the execution of prohibited mobile code is prevented.
+
+Navigate to Central Administration.
+
+Click Manage Web Applications.
+
+For each Web Application in the Farm:
+-Click on the Web Application to configure.
+-Click on the drop-down box below General Settings.
+-Click on General Settings in the drop down box.
+-Under Browser File Handling, verify that "Strict" is selected.
+
+If "Strict" is not selected, this is a finding.</check-content></check></Rule></Group><Group id="V-59961"><title>SRG-APP-000156</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74391r1_rule" severity="medium" weight="10.0"><version>SP13-00-000075</version><title>SharePoint must use replay-resistant authentication mechanisms for network access to privileged accounts.</title><description>&lt;VulnDiscussion&gt;An authentication process resists replay attacks if it is impractical to achieve a successful authentication by recording and replaying a previous authentication message.
+
+Techniques used to address this include protocols using nonces (e.g., numbers generated for a specific one-time use) or challenges (e.g., TLS, WS_Security), and time synchronous or challenge-response one-time authenticators.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001941</ident><fixtext fixref="F-65371r2_fix">Configure the SharePoint server to use replay-resistant authentication mechanisms for network access to privileged accounts.
+
+If the web application is using Integrated Windows Authentication as the claims provider, perform the following:
+
+Open the Central Administration site, select "Application Management".
+
+On the "Application Management" page, select "Manage Web Applications", select the web application that corresponds to the site reviewed in the "Check" section above, then click the "Authentication Providers" button in the ribbon.
+
+Select the zone corresponding to the web application being reviewed, which will open the "Edit Authentication" dialog in the "Claims Authentication Types" section, select "Negotiate (Kerberos)" in the "Integrated Windows Authentication" dropdown, then click "Save".</fixtext><fix id="F-65371r2_fix" /><check system="C-60651r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Review the SharePoint server configuration to ensure replay-resistant authentication mechanisms for network access to privileged accounts are used.
+
+SharePoint must be configured to use Kerberos as the primary authentication provider.
+
+Log on to the server.
+
+Click Start.
+
+Type Internet Information Services Manager in the Search Bar, click Enter.
+
+Expand the server node in the tree view and expand the "Sites" node.
+
+*For each...* Select a SharePoint Web Application site to review.
+
+In the "IIS" section, double-click Authentication and then select "Windows Authentication".
+
+Right-click "Windows Authentication" and select "Providers".
+
+Ensure "Negotiate" is listed first. If NTLM is listed first in the Enabled Providers box, this is a finding.</check-content></check></Rule></Group><Group id="V-59963"><title>SRG-APP-000180</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74393r1_rule" severity="medium" weight="10.0"><version>SP13-00-000080</version><title>SharePoint must uniquely identify and authenticate non-organizational users (or processes acting on behalf of non-organizational users).</title><description>&lt;VulnDiscussion&gt;Non-organizational users include all information system users other than organizational users, which include organizational employees or individuals the organization deems to have equivalent status of employees (e.g., contractors, guest researchers, individuals from allied nations).
+
+Non-organizational users must be uniquely identified and authenticated for all accesses other than those accesses explicitly identified and documented by the organization when related to the use of anonymous access, such as accessing a web server.
+
+Accordingly, a risk assessment is used in determining the authentication needs of the organization.
+
+Scalability, practicality, and security are simultaneously considered in balancing the need to ensure ease of use for access to federal information and information systems with the need to protect and adequately mitigate risk to organizational operations, organizational assets, individuals, other organizations, and the Nation.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000804</ident><fixtext fixref="F-65373r2_fix">Configure SharePoint to uniquely identify and authenticate non-organizational users (or processes acting on behalf of non-organizational users).
+
+Navigate to Central Administration website.
+
+Click on "Manage web applications".
+
+Click the web application name.
+
+Click the "Authentication Providers" button in the "Web Applications" ribbon.
+
+Click each Zone, and clear the "Enable anonymous access" check box.
+
+Click "Save".
+
+Repeat steps for each web application.</fixtext><fix id="F-65373r2_fix" /><check system="C-60653r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Review the SharePoint configuration to ensure non-organizational users (or processes acting on behalf of non-organizational users) are uniquely identified and authenticated.
+
+Navigate to Central Administration website.
+
+Click on "Manage web applications".
+
+Click the web application name.
+
+Click the "Authentication Providers" button in the "Web Applications" ribbon.
+
+Click each Zone, and verify that the "Enable anonymous access" check box is not selected.
+
+If it is selected and the web application zone is not defined in the system security plan as allowing anonymous access, this is a finding.
+
+Repeat steps for each web application.</check-content></check></Rule></Group><Group id="V-59965"><title>SRG-APP-000196</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74395r4_rule" severity="high" weight="10.0"><version>SP13-00-000085</version><title>SharePoint must implement required cryptographic protections using cryptographic modules complying with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance.</title><description>&lt;VulnDiscussion&gt;Certain encryption types are no longer considered secure.  This setting configures a minimum encryption type for SharePoint. Different versions of the Windows Server OS, and versions of SharePoint will have different suites available.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000803</ident><fixtext fixref="F-65375r6_fix">Configure the SharePoint server to implement required cryptographic protections using cryptographic modules complying with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance.
+
+Open MMC.
+
+Click “File”, “Add/Remove Snap-in”, and “add Group Policy Object Editor”.
+
+Enter a name for the Group Policy Object, or accept the default.
+
+Click “Finish”.
+
+Click “OK”.
+
+Navigate to Computer Policy &gt;&gt; Computer Configuration &gt;&gt; Administrative Templates &gt;&gt; Network &gt;&gt; SSL Configuration settings.
+
+Right-click “SSL Configuration Settings”, click “SSL Cipher Suite Order”, and then click “Edit”.
+
+In the “SSL Cipher Suite Order” dialog box, select "Enabled" option.
+
+Under “Options”, in the “SSL Cipher Suites” text box, enter desired cipher suites that are not DES or RC4.
+
+Click “OK”.</fixtext><fix id="F-65375r6_fix" /><check system="C-60655r5_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Review the SharePoint server configuration to ensure required cryptographic protections using cryptographic modules complying with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance are implemented.
+
+Open MMC.
+
+Click "File", "Add/Remove Snap-in", and "add Group Policy Object Editor".
+
+Enter a name for the Group Policy Object, or accept the default.
+
+Click "Finish".
+
+Click "OK".
+
+Navigate to Computer Policy &gt;&gt; Computer Configuration &gt;&gt; Administrative Templates &gt;&gt; Network &gt;&gt; SSL Configuration settings.
+
+Right-click "SSL Configuration Settings", click "SSL Cipher Suite Order", click "Edit".
+
+In the "SSL Cipher Suite Order" dialog box, if "Enabled" is not selected, this is a finding.
+
+Under Options, in the "SSL Cipher Suites" text box, a list of cipher suites will be displayed.
+
+If any DES or RC4 cipher suites exist in the list, this is a finding.</check-content></check></Rule></Group><Group id="V-59967"><title>SRG-APP-000197</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74397r4_rule" severity="high" weight="10.0"><version>SP13-00-000090</version><title>SharePoint must employ FIPS-validated cryptography to protect unclassified information.</title><description>&lt;VulnDiscussion&gt;Certain encryption types are no longer considered secure.  This setting configures a minimum encryption type for SharePoint. Different versions of the Windows Server OS, and versions of SharePoint will have different suites available.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-002450</ident><fixtext fixref="F-65377r5_fix">Configure SharePoint to employ FIPS-validated cryptography to protect unclassified information.
+
+Open MMC.
+
+Click “File”, “Add/Remove Snap-in”, and “add Group Policy Object Editor”.
+
+Enter a name for the Group Policy Object, or accept the default.
+
+Click “Finish”.
+
+Click “OK”.
+
+Navigate to Computer Policy &gt;&gt; Computer Configuration &gt;&gt; Administrative Templates &gt;&gt; Network &gt;&gt; SSL Configuration settings.
+
+Right-click “SSL Configuration Settings”, click “SSL Cipher Suite Order”, and then click “Edit”.
+
+In the “SSL Cipher Suite Order” dialog box, select "Enabled" option.
+
+Under “Options”, in the “SSL Cipher Suites” text box, enter desired cipher suites that are not DES or RC4.
+
+Click “OK”.</fixtext><fix id="F-65377r5_fix" /><check system="C-60657r4_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Review the SharePoint server configuration to ensure FIPS-validated cryptography is employed to protect unclassified information.
+
+Open MMC.
+
+Click "File", "Add/Remove Snap-in", and "add Group Policy Object Editor".
+
+Enter a name for the Group Policy Object, or accept the default.
+
+Click "Finish".
+
+Click "OK".
+
+Navigate to Computer Policy &gt;&gt; Computer Configuration &gt;&gt; Administrative Templates &gt;&gt; Network &gt;&gt; SSL Configuration settings
+
+Right-click "SSL Configuration Settings", click "SSL Cipher Suite Order", click "Edit".
+
+In the "SSL Cipher Suite Order" dialog box, if "Enabled" is not selected, this is a finding.
+
+Under Options, in the "SSL Cipher Suites" text box, a list of cipher suites will be displayed.
+
+If any DES or RC4 cipher suites exist in the list, this is a finding.</check-content></check></Rule></Group><Group id="V-59969"><title>SRG-APP-000198</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74399r4_rule" severity="high" weight="10.0"><version>SP13-00-000095</version><title>SharePoint must employ NSA-approved cryptography to protect classified information.</title><description>&lt;VulnDiscussion&gt;Certain encryption types are no longer considered secure.  This setting configures a minimum encryption type for SharePoint. Different versions of the Windows Server OS, and versions of SharePoint will have different suites available.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-002450</ident><fixtext fixref="F-65379r5_fix">Configure SharePoint to employ NSA-approved cryptography to protect classified information.
+
+Open MMC.
+
+Click “File”, “Add/Remove Snap-in”, and “add Group Policy Object Editor”.
+
+Enter a name for the Group Policy Object, or accept the default.
+
+Click “Finish”.
+
+Click “OK”.
+
+Navigate to Computer Policy &gt;&gt; Computer Configuration &gt;&gt; Administrative Templates &gt;&gt; Network &gt;&gt; SSL Configuration settings.
+
+Right-click “SSL Configuration Settings”, click “SSL Cipher Suite Order”, and then click “Edit”.
+
+In the “SSL Cipher Suite Order” dialog box, select "Enabled" option.
+
+Under “Options”, in the “SSL Cipher Suites” text box, enter desired cipher suites that are not DES or RC4.
+
+Click “OK”.</fixtext><fix id="F-65379r5_fix" /><check system="C-60659r4_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Review the SharePoint server configuration to ensure NSA-approved cryptography is employed to protect classified information.
+
+Open MMC.
+
+Click "File", "Add/Remove Snap-in", and "add Group Policy Object Editor".
+
+Enter a name for the Group Policy Object, or accept the default.
+
+Click "Finish".
+
+Click "OK".
+
+Navigate to Computer Policy &gt;&gt; Computer Configuration &gt;&gt; Administrative Templates &gt;&gt; Network &gt;&gt; SSL Configuration settings.
+
+Right-click "SSL Configuration Settings", click "SSL Cipher Suite Order", click "Edit".
+
+In the "SSL Cipher Suite Order" dialog box, if "Enabled" is not selected, this is a finding.
+
+Under Options, in the "SSL Cipher Suites" text box, a list of cipher suites will be displayed.
+
+If any DES or RC4 cipher suites exist in the list, this is a finding.</check-content></check></Rule></Group><Group id="V-59971"><title>SRG-APP-000199</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74401r4_rule" severity="high" weight="10.0"><version>SP13-00-000100</version><title>SharePoint must employ FIPS-validated cryptography to protect unclassified information when such information must be separated from individuals who have the necessary clearances yet lack the necessary access approvals.</title><description>&lt;VulnDiscussion&gt;Certain encryption types are no longer considered secure.  This setting configures a minimum encryption type for SharePoint. Different versions of the Windows Server OS, and versions of SharePoint will have different suites available.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-002450</ident><fixtext fixref="F-65381r5_fix">Configure SharePoint to employ FIPS-validated cryptography to protect unclassified information when such information must be separated from individuals who have the necessary clearances yet lack the necessary access approvals.
+
+Open MMC.
+
+Click “File”, “Add/Remove Snap-in”, and “add Group Policy Object Editor”.
+
+Enter a name for the Group Policy Object, or accept the default.
+
+Click “Finish”.
+
+Click “OK”.
+
+Navigate to Computer Policy &gt;&gt; Computer Configuration &gt;&gt; Administrative Templates &gt;&gt; Network &gt;&gt; SSL Configuration settings.
+
+Right-click “SSL Configuration Settings”, click “SSL Cipher Suite Order”, and then click “Edit”.
+
+In the “SSL Cipher Suite Order” dialog box, select "Enabled" option.
+
+Under “Options”, in the “SSL Cipher Suites” text box, enter desired cipher suites that are not DES or RC4.
+
+Click “OK”.</fixtext><fix id="F-65381r5_fix" /><check system="C-60661r4_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Review the SharePoint server configuration to ensure FIPS-validated cryptography is employed to protect unclassified information when such information must be separated from individuals who have the necessary clearances yet lack the necessary access approvals.
+
+Open MMC.
+
+Click "File", "Add/Remove Snap-in", and "add Group Policy Object Editor".
+
+Enter a name for the Group Policy Object, or accept the default.
+
+Click "Finish".
+
+Click "OK".
+
+Navigate to Computer Policy &gt;&gt; Computer Configuration &gt;&gt; Administrative Templates &gt;&gt; Network &gt;&gt; SSL Configuration settings.
+
+Right-click "SSL Configuration Settings", click "SSL Cipher Suite Order", click "Edit".
+
+In the "SSL Cipher Suite Order" dialog box, if "Enabled" is not selected, this is a finding.
+
+Under Options, in the "SSL Cipher Suites" text box, a list of cipher suites will be displayed.
+
+If any DES or RC4 cipher suites exist in the list, this is a finding.</check-content></check></Rule></Group><Group id="V-59973"><title>SRG-APP-000204</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74403r2_rule" severity="medium" weight="10.0"><version>SP13-00-000105</version><title>SharePoint must validate the integrity of security attributes exchanged between systems.</title><description>&lt;VulnDiscussion&gt;When data is exchanged between information systems, the security attributes associated with said data need to be maintained.
+
+Security attributes are an abstraction representing the basic properties or characteristics of an entity with respect to safeguarding information, typically associated with internal data structures (e.g., records, buffers, files) within the information system and used to enable the implementation of access control and flow control policies, reflect special dissemination, handling or distribution instructions, or support other aspects of the information security policy.
+
+Security attributes may be explicitly or implicitly associated with the information contained within the information system.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001158</ident><fixtext fixref="F-65383r2_fix">Configure the SharePoint server to validate the integrity of security attributes exchanged between systems.
+
+In Central Administration, click Security.
+
+On the Security page, in the Information policy list, click "Configure information rights management".
+
+Select "Use the default RMS server specified in Active Directory", or identify a specific server by selecting "Use this RMS server:" and entering the server name.
+
+Configure information management policies in accordance with the system security plan requirements.</fixtext><fix id="F-65383r2_fix" /><check system="C-60663r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Note: If no data is exchanged between systems, and has been documented by the Data Owner, IRM is not required. This requirement is Not Applicable.
+
+Review the SharePoint server configuration to ensure the integrity of security attributes exchanged between systems is validated. 
+
+An IRM must be enabled in SharePoint. The Windows Rights Management Services (RMS) (or a comparable IRM product) can either be located through Active Directory or specified.
+
+In Central Administration, click Security.
+
+On the Security page, in the Information policy list, click "Configure information rights management".
+
+If "Do not use IRM on this server" is selected, or if a configuration error message is displayed (such as "... IRM will not work until the client is configured properly"), this is a finding.</check-content></check></Rule></Group><Group id="V-59975"><title>SRG-APP-000219</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74405r2_rule" severity="high" weight="10.0"><version>SP13-00-000110</version><title>SharePoint must ensure authentication of both client and server during the entire session. An example of this is SSL Mutual Authentication.</title><description>&lt;VulnDiscussion&gt;This control focuses on communications protection at the session, versus packet level.
+
+At the application layer, session IDs are tokens generated by web applications to uniquely identify an application user's session. Web applications utilize session tokens or session IDs in order to establish application user identity. Proper use of session IDs addresses man-in-the-middle attacks, including session hijacking or insertion of false information into a session. This control is only implemented where deemed necessary by the organization (e.g., sessions in service-oriented architectures providing web-based services).&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001184</ident><fixtext fixref="F-65385r4_fix">Configure the SharePoint server to ensure SSL Mutual authentication of both client and server during the entire session.
+
+Open IIS Manager.
+
+In the Connections pane, expand "Sites".
+
+Click the "Web Application" site.
+
+In the Actions pane, click "Bindings".
+
+In the Site Bindings window, click "Add".
+
+In the Add Site Binding window, change "Type" to "https", and select the site's SSL certificate. Click "OK".
+
+Remove all bindings that do not use https.
+
+Click "Close".</fixtext><fix id="F-65385r4_fix" /><check system="C-60665r3_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Review the SharePoint server configuration to ensure SSL Mutual authentication of both client and server during the entire session.
+
+Navigate to Central Administration.
+
+Under “System Settings”, click “Configure Alternate Access mappings”.
+
+Review the “Public URL for zone” column values. If any URL does not begin with “https”, this is a finding.</check-content></check></Rule></Group><Group id="V-59977"><title>SRG-APP-000220</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74407r1_rule" severity="high" weight="10.0"><version>SP13-00-000115</version><title>SharePoint must terminate user sessions upon user logoff, and when idle time limit is exceeded.</title><description>&lt;VulnDiscussion&gt;This requirement focuses on communications protection at the application session, versus network packet level.
+
+Session IDs are tokens generated by web applications to uniquely identify an application user's session.  Applications will make application decisions and execute business logic based on the session ID. Unique session identifiers or IDs are the opposite of sequentially generated session IDs that can be easily guessed by an attacker. Unique session IDs help to reduce predictability of said identifiers. Unique session IDs address man-in-the-middle attacks, including session hijacking or insertion of false information into a session. If the attacker is unable to identify or guess the session information related to pending application traffic, they will have more difficulty in hijacking the session or otherwise manipulating valid sessions. When a user logs off, or when any other session termination event occurs, the application must terminate the user session to minimize the potential for an attacker to hijack that particular user session.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001185</ident><fixtext fixref="F-65387r2_fix">Configure the SharePoint server to terminate user sessions upon user logoff, and when idle time limit is exceeded.
+
+Navigate to Central Administration website.
+
+Click "Application Management".
+
+Click "Manage Web Applications".
+
+Repeat the following steps for each web application:
+-Select the web application.
+-Click "General Settings" in the "Web Application" ribbon.
+-In the "Web Page Security Validation" section, set "Security Validation:" to "On" and that the "Security Validation Expires:" setting is set to 15 minutes.</fixtext><fix id="F-65387r2_fix" /><check system="C-60667r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Review the SharePoint server configuration to ensure user sessions are terminated upon user logoff, and when idle time limit is exceeded.
+
+Navigate to Central Administration website.
+
+Click "Application Management".
+
+Click "Manage Web Applications".
+
+Repeat the following steps for each web application:
+-Select the web application.
+-Click "General Settings" in the "Web Application" ribbon.
+-In the "Web Page Security Validation" section, verify that "Security Validation is:" is set to "On" and that the "Security Validation Expires:" setting is set to 15 minutes.
+
+Otherwise, this is a finding.</check-content></check></Rule></Group><Group id="V-59979"><title>SRG-APP-000230</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74409r1_rule" severity="high" weight="10.0"><version>SP13-00-000120</version><title>SharePoint must maintain the confidentiality of information during aggregation, packaging, and transformation in preparation for transmission. When transmitting data, applications need to leverage transmission protection mechanisms such as TLS, SSL VPNs, or IPSec.</title><description>&lt;VulnDiscussion&gt;Preventing the disclosure of transmitted information requires that applications take measures to employ some form of cryptographic mechanism in order to protect the information during transmission. This is usually achieved through the use of Transport Layer Security (TLS), SSL VPN, or IPSec tunnel.
+
+Alternative physical protection measures include protected distribution systems. Protective Distribution Systems (PDS) are used to transmit unencrypted classified NSI through an area of lesser classification or control. Inasmuch as the classified NSI is unencrypted, the PDS must provide adequate electrical, electromagnetic, and physical safeguards to deter exploitation. Refer to NSTSSI No. 7003 for additional details on a PDS.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-002420</ident><fixtext fixref="F-65389r2_fix">Configure the SharePoint server to maintain the confidentiality of information during aggregation, packaging, and transformation in preparation for transmission.
+
+Open IIS Manager.
+
+In the Connections pane, expand Sites.
+
+Click the Web Application site.
+
+In the Actions pane, click Bindings.
+
+In the Site Bindings window, click Add.
+
+In the Add Site Binding window, change Type to https, and select the site's SSL certificate.
+
+Click OK, and then click Close.</fixtext><fix id="F-65389r2_fix" /><check system="C-60669r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Review the SharePoint server configuration to ensure the confidentiality of information during aggregation, packaging, and transformation in preparation for transmission is maintained.
+
+In SharePoint Central Administration, click Application Management.
+
+On the Application Management page, in the Web Applications list, click Manage web applications.
+
+On the Web Applications Management page, verify that each Web Application URL begins with https.
+
+If the URL does not begin with https, this is a finding.
+
+If SharePoint communications between all components and clients are protected by alternative physical measures that have been approved by the AO, this is not a finding.</check-content></check></Rule></Group><Group id="V-59981"><title>SRG-APP-000236</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74411r1_rule" severity="high" weight="10.0"><version>SP13-00-000125</version><title>SharePoint must implement an information system isolation boundary that minimizes the number of nonsecurity functions included within the boundary containing security functions.</title><description>&lt;VulnDiscussion&gt;The information system isolates security functions from nonsecurity functions by means of an isolation boundary (implemented via partitions and domains) controlling access to and protecting the integrity of, the hardware, software, and firmware that perform those security functions. The information system maintains a separate execution domain (e.g., address space) for each executing process.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001184</ident><fixtext fixref="F-65391r2_fix">Configure the SharePoint server to implement an information system isolation boundary that minimizes the number of nonsecurity functions included within the boundary containing security functions.
+
+Log on to the server that hosts the farm's Central Administration website.
+
+Open IIS Manager.
+
+Expand "Sites" tree view and right-click the web application named "SharePoint Central Administration".
+
+Select "Edit Bindings ...".
+
+Select the site binding record and click "Edit".
+
+From the "IP Address" dropdown list, select an OOB IP address.
+
+Click "Ok".
+
+*NOTE: If the Central Administration site has multiple site bindings, steps will need to be repeated for each site binding.</fixtext><fix id="F-65391r2_fix" /><check system="C-60671r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Review the SharePoint server configuration to ensure an information system isolation boundary that minimizes the number of nonsecurity functions included within the boundary containing security functions are implemented.
+
+Log on to the server that hosts the farm's Central Administration website.
+
+Open IIS Manager.
+
+Expand "Sites" tree view and right-click the web application named "SharePoint Central Administration".
+
+Select "Edit Bindings ...".
+
+Confirm the site is bound to an out-of-band (OOB) IP address.
+
+If the site is bound to a production IP address or not bound to a specific IP address, this is a finding.</check-content></check></Rule></Group><Group id="V-59983"><title>SRG-APP-000238</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74413r1_rule" severity="medium" weight="10.0"><version>SP13-00-000130</version><title>SharePoint must implement security functions as a layered structure minimizing interactions between layers of the design and avoiding any dependence by lower layers on the functionality or correctness of higher layers.</title><description>&lt;VulnDiscussion&gt;The information system isolates security functions from nonsecurity functions by means of an isolation boundary (implemented via partitions and domains) controlling access to, and protecting the integrity of, the hardware, software, and firmware that perform those security functions. The information system maintains a separate execution domain (e.g., address space) for each executing process.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001089</ident><fixtext fixref="F-65393r2_fix">Configure the SharePoint server to implement security functions as a layered structure minimizing interactions between layers of the design and avoiding any dependence by lower layers on the functionality or correctness of higher layers.
+
+Configure access to Central Administration to be allowed over a management (OOB) network.
+
+Configure Central Administration on a server that resides within the internal network (not on a server in the DMZ).
+
+Configure management access (i.e., remote desktop access and local server access) so that it occurs only via a management network (OOB) and not over a production network.</fixtext><fix id="F-65393r2_fix" /><check system="C-60673r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Review the SharePoint server configuration to ensure security functions as a layered structure minimizing interactions between layers of the design and avoiding any dependence by lower layers on the functionality or correctness of higher layers are implemented.
+
+Check the network location of the Central Administration server.
+
+If the server resides in the DMZ, this is a finding.
+
+Attempt to access Central Administration without first connecting to a management network VPN.
+
+If Central Administration can be accessed over a production network, this is a finding.
+
+Attempt to connect directly to a SharePoint server (i.e., via remote desktop) without first connecting to a management network VPN.
+
+If a remote desktop session can be established via a production network, this is a finding.</check-content></check></Rule></Group><Group id="V-59985"><title>SRG-APP-000264</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74415r1_rule" severity="high" weight="10.0"><version>SP13-00-000135</version><title>SharePoint must employ cryptographic mechanisms preventing the unauthorized disclosure of information during transmission, unless the transmitted data is otherwise protected by alternative physical measures.</title><description>&lt;VulnDiscussion&gt;Preventing the disclosure of transmitted information requires that applications take measures to employ some form of cryptographic mechanism in order to protect the information during transmission. This is usually achieved through the use of Transport Layer Security (TLS), SSL VPN, or IPSEC tunnel.
+
+Alternative physical protection measures include Protected Distribution Systems (PDS). PDS are used to transmit unencrypted classified NSI through an area of lesser classification or control. Inasmuch as the classified NSI is unencrypted, the PDS must provide adequate electrical, electromagnetic, and physical safeguards to deter exploitation. Refer to NSTSSI No. 7003 for additional details on a PDS.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-002421</ident><fixtext fixref="F-65395r1_fix">Configure the SharePoint server to employ cryptographic mechanisms preventing the unauthorized disclosure of information during transmission, unless the transmitted data is otherwise protected by alternative physical measures.
+
+Open IIS Manager.
+
+In the Connections pane, expand Sites.
+
+Click the Web Application site.
+
+In the Actions pane, click Bindings.
+
+In the Site Bindings window, click Add.
+
+In the Add Site Binding window, change Type to https, and select the site's SSL certificate.
+
+Click OK, and then click Close.</fixtext><fix id="F-65395r1_fix" /><check system="C-60675r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Review the SharePoint server to ensure cryptographic mechanisms preventing the unauthorized disclosure of information during transmission are employed, unless the transmitted data is otherwise protected by alternative physical measures.
+
+In SharePoint Central Administration, click Application Management.
+
+On the Application Management page, in the Web Applications list, click Manage web applications.
+
+On the Web Applications Management page, verify that each Web Application URL begins with https.
+
+If the URL does not begin with https, this is a finding.
+
+If SharePoint communications between all components and clients are protected by alternative physical measures that have been approved by the AO, this is not a finding.</check-content></check></Rule></Group><Group id="V-59987"><title>SRG-APP-000273</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74417r1_rule" severity="high" weight="10.0"><version>SP13-00-000140</version><title>SharePoint must prevent non-privileged users from circumventing malicious code protection capabilities.</title><description>&lt;VulnDiscussion&gt;Malicious code protection software must be protected to prevent a non-privileged user or malicious piece of software from disabling the protection mechanism. A common tactic of malware is to identify the type of malicious code protection software running on the system and deactivate it. Malicious code includes viruses, worms, Trojan horses, and Spyware.
+
+Examples include the capability for non-administrative users to turn off or otherwise disable anti-virus.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-002235</ident><fixtext fixref="F-65397r2_fix">Configure the SharePoint server to prevent non-privileged users from circumventing malicious code protection capabilities.
+
+Navigate to Central Administration.
+
+Click "Manage web applications".
+
+Select the web application by clicking its name.
+
+Select "Blocked File Types" from the ribbon.
+
+Add file types that are defined in the SSP but not in the list of blocked file types.
+
+Click "Ok".
+
+Repeat for each web application that has findings.</fixtext><fix id="F-65397r2_fix" /><check system="C-60677r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Review the SharePoint server configuration to ensure non-privileged users are prevented from circumventing malicious code protection capabilities.
+
+Confirm that the list of blocked file types configured in Central Administration matches the "blacklist" document in the application's SSP. See TechNet for default file types that are blocked: http://technet.microsoft.com/en-us/library/cc262496.aspx
+
+Navigate to Central Administration.
+
+Click "Manage web applications".
+
+Select the web application by clicking its name.
+
+Select "Blocked File Types" from the ribbon.
+
+Compare the list of blocked file types to those listed in the SSP. If the SSP has file types that are not in the blocked file types list, this is a finding.
+
+Repeat check for each web application.</check-content></check></Rule></Group><Group id="V-59989"><title>SRG-APP-000179</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74419r4_rule" severity="high" weight="10.0"><version>SP13-00-000145</version><title>SharePoint must use mechanisms for authentication to a cryptographic module that meet the requirements of applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance for such authentication.</title><description>&lt;VulnDiscussion&gt;Certain encryption types are no longer considered secure.  This setting configures a minimum encryption type for SharePoint. Different versions of the Windows Server OS, and versions of SharePoint will have different suites available.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000803</ident><fixtext fixref="F-65399r5_fix">Configure the SharePoint server to use mechanisms for authentication to a cryptographic module that meet the requirements of applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance for such authentication.
+
+Open MMC.
+
+Click “File”, “Add/Remove Snap-in”, and “add Group Policy Object Editor”.
+
+Enter a name for the Group Policy Object, or accept the default.
+
+Click “Finish”.
+
+Click “OK”.
+
+Navigate to Computer Policy &gt;&gt; Computer Configuration &gt;&gt; Administrative Templates &gt;&gt; Network &gt;&gt; SSL Configuration settings.
+
+Right-click “SSL Configuration Settings”, click “SSL Cipher Suite Order”, and then click “Edit”.
+
+In the “SSL Cipher Suite Order” dialog box, select "Enabled" option.
+
+Under “Options”, in the “SSL Cipher Suites” text box, enter desired cipher suites that are not DES or RC4.
+
+Click “OK”.</fixtext><fix id="F-65399r5_fix" /><check system="C-60679r4_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Review the SharePoint server configuration to ensure mechanisms are used for authentication to a cryptographic module that meet the requirements of applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance for such authentication.
+
+Open MMC.
+
+Click "File", "Add/Remove Snap-in", and "add Group Policy Object Editor".
+
+Enter a name for the Group Policy Object, or accept the default.
+
+Click "Finish".
+
+Click "OK".
+
+Navigate to Computer Policy &gt;&gt; Computer Configuration &gt;&gt; Administrative Templates &gt;&gt; Network &gt;&gt; SSL Configuration settings.
+
+Right-click "SSL Configuration Settings", click "SSL Cipher Suite Orde"r, click "Edit".
+
+In the "SSL Cipher Suite Order" dialog box, if "Enabled" is not selected, this is a finding.
+
+Under Options, in the "SSL Cipher Suites" text box, a list of cipher suites will be displayed.
+
+If any DES or RC4 cipher suites exist in the list, this is a finding.</check-content></check></Rule></Group><Group id="V-59991"><title>SRG-APP-000208</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74421r2_rule" severity="medium" weight="10.0"><version>SP13-00-000205</version><title>SharePoint server access to the Online Web Part Gallery must be configured for limited access.</title><description>&lt;VulnDiscussion&gt;Web Part galleries are groupings of Web Parts. There are four Web Part galleries: Closed Web Parts, Site Name Gallery, Server Gallery, and Online Gallery. The Online Gallery is a collection of Microsoft MSNBC Web Parts located on the Internet. Allowing users to access the Online Web Part Gallery causes a significant performance hit on the server, due to the server attempting to connect to the MSNBC online gallery. This could result in a Denial-of-Service. The Online Gallery could contain Web Parts from unknown third parties, which could increase the risk of a malicious code execution attack. Preventing users from accessing the Online Web Part Gallery decreases the system's attack surface.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001167</ident><fixtext fixref="F-65401r2_fix">Configure the SharePoint server for limited access to the Online Web Part Gallery.
+
+Enable the "Prevents users from accessing the Online Web Part Gallery, and helps to improve security and performance" option for each web application. 
+
+Log on to Central Administration.
+
+Navigate to the Security page.
+
+Click on "Manage web part security".
+
+For each web application in the web application section, perform the following: 
+-Select the correct web application in the web application section.
+-Select the "Prevents users from accessing the Online Web Part Gallery, and helps to improve security and performance" option in the Online Web Part Gallery section.
+
+Select "OK".</fixtext><fix id="F-65401r2_fix" /><check system="C-60681r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Review the SharePoint server configuration to ensure access to the online web part gallery is configured for limited access.
+
+Log on to Central Administration.
+
+Navigate to the Security page.
+
+Click on "Manage web part security".
+
+For each web application in the web application section, perform the following: 
+-Select the correct web application in the web application section.
+-Verify "Prevents users from accessing the Online Web Part Gallery, and helps to improve security and performance" option in the Online Web Part Gallery section is selected.
+
+If the "Prevents users from accessing the Online Web Part Gallery, and helps to improve security and performance" option in the Online Web Part Gallery section is not checked, this is a finding.</check-content></check></Rule></Group><Group id="V-59993"><title>SRG-APP-000212</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74423r1_rule" severity="medium" weight="10.0"><version>SP13-00-000150</version><title>The SharePoint Central Administration site must not be accessible from Extranet or Internet connections.</title><description>&lt;VulnDiscussion&gt;SharePoint must prevent the presentation of information system management-related functionality at an interface utilized by general, (i.e., non-privileged), users. 
+
+The Central Administrator is an application used to manage SharePoint system settings and the settings of the web applications running under SharePoint. The Central Administrator application should both be protected using a defense-in-depth approach. Regular users should not be able to access the Central Administrator as the first line of defense. The second line of defense is regular users do not have user ids defined in the Central Administration application. &lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001083</ident><fixtext fixref="F-65403r2_fix">Configure the SharePoint Central Administration site to not be accessible from Extranet or Internet connections.
+
+Block outside Central Administrator access.
+
+Use an IIS IP address restrictions, firewall, or other filtering solutions to limit access to Central Administration site.</fixtext><fix id="F-65403r2_fix" /><check system="C-60683r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Review the SharePoint server configuration to ensure Central Administration site is not accessible from Extranet or Internet connections.
+
+Check outside access to Central Administration.
+
+On an administrative work station, open Central Administration and make note of the URL (i.e., http://sharepointserver:7040).
+
+Try to open the Central Administration application on a regular user's workstation. Open a Web browser and type in the URL to Central Administration.
+
+If the Central Administration can be opened, this is a finding.</check-content></check></Rule></Group><Group id="V-59995"><title>SRG-APP-000039</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74425r1_rule" severity="medium" weight="10.0"><version>SP13-00-000155</version><title>For environments requiring an Internet-facing capability, the SharePoint application server upon which Central Administration is installed, must not be installed in the DMZ.</title><description>&lt;VulnDiscussion&gt;Information flow control regulates where information is allowed to travel within an information system and between information systems (as opposed to who is allowed to access the information) and without explicit regard to subsequent accesses to the information. 
+
+SharePoint installed Central Administrator is a powerful management tool used to administer the farm. This server should be installed on a trusted network segment. This server should also be used to run services rather than user-oriented web applications.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001414</ident><fixtext fixref="F-65405r1_fix">For environments requiring an Internet-facing capability, remove the SharePoint Central Administration application server upon which Central Administration is installed from the DMZ.</fixtext><fix id="F-65405r1_fix" /><check system="C-60685r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>For environments requiring an Internet-facing capability, ensure the SharePoint Central Administration application server is not in the DMZ.
+
+Inspect the logical location of the server farm web front end servers.
+
+Verify the Central Administration site is not installed on a server located in a DMZ or other publicly accessible segment of the network.
+
+If Central Administrator is installed on a publicly facing SharePoint server, this is a finding.</check-content></check></Rule></Group><Group id="V-59997"><title>SRG-APP-000062</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74427r1_rule" severity="medium" weight="10.0"><version>SP13-00-000160</version><title>The SharePoint farm service account (database access account)  must be configured with minimum privileges in Active Directory (AD).</title><description>&lt;VulnDiscussion&gt;Separation of duties is a prevalent Information Technology control implemented at different layers of the information system including the operating system and in applications. It serves to eliminate or reduce the possibility that a single user may carry out a prohibited action. Separation of duties requires the person accountable for approving an action not be the same person who is tasked with implementing the action. 
+
+This requirement is intended to limit exposure due to user accounts being used to operate from within a privileged account or role. Limiting the access and permissions of privileged accounts to the minimum required, reduces exposure if the account is compromised and provides forensic history of activity when operating from these accounts. 
+This policy limits the Farm Account privileges in AD.  However, default permissions for this account are configured by the SharePoint Products Configuration Wizard during product installation. This account is referred to during the installation as the "Database Access" account. By default, the account is used as the service account for the SharePoint Timer Service and the SharePoint Central Administration Web Site Application Pool. These settings should not be changed. Furthermore, this account should not be used as the service account for non-privileged services, applications, or application pools.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-65407r4_fix">Configure the SharePoint farm service account (database access account) with minimum privileges in Active Directory (AD).
+
+Ensure the Setup User domain user has minimum permissions in Active Directory. 
+- Using the AD DS console, navigate to “Active Directory Users and Computers” &gt;&gt; Users.
+- Double click on the account to view the account properties.
+- Select the “Members of” tab and configure the farm service account is a member of the Domain Users group. Remove any other group membership from the account.
+- Select the other tabs in this area and remove any services or permissions configured for this account.</fixtext><fix id="F-65407r4_fix" /><check system="C-60687r5_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Review the SharePoint server configuration to ensure the farm service account (database access account)  is configured with minimum privileges in Active Directory (AD).
+
+- Verify the account has least privilege in Active Directory.
+- Navigate to “Active Directory Users and Computers” &gt;&gt; Users.
+- Double click on the account to view the account properties.
+- Select the “Members of” tab and verify this account is a member of the Domain Users group only.
+- Select the other tabs in this area to verify no other services or permissions are configured for this account.
+
+If the farm service account is a member of other groups other than Domain Users, this is a finding.
+
+If the Setup User account has unneeded permissions or services assigned, this is a finding.</check-content></check></Rule></Group><Group id="V-59999"><title>SRG-APP-000062</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74429r2_rule" severity="medium" weight="10.0"><version>SP13-00-000165</version><title>The SharePoint farm service account (database access account) must be configured with minimum privileges on the SQL server.</title><description>&lt;VulnDiscussion&gt;Separation of duties is a prevalent Information Technology control implemented at different layers of the information system including the operating system and in applications. It serves to eliminate or reduce the possibility that a single user may carry out a prohibited action. Separation of duties requires the person accountable for approving an action not be the same person who is tasked with implementing the action. 
+
+This requirement is intended to limit exposure due to user accounts being used to operate from within a privileged account or role. Limiting the access and permissions of privileged accounts to the minimum required, reduces exposure if the account is compromised and provides forensic history of activity when operating from these accounts. 
+This policy limits the Farm Account privileges in AD.  However, default permissions for this account are configured by the SharePoint Products Configuration Wizard during product installation. This account is referred to during the installation as the "Database Access" account. By default, the account is used as the service account for the SharePoint Timer Service and the SharePoint Central Administration Web Site Application Pool. These settings should not be changed. Furthermore, this account should not be used as the service account for non-privileged services, applications, or application pools.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-65409r5_fix">Configure the SharePoint farm service account (database access account) with minimum privileges on the SQL server.
+
+Configure the account on each SQL server in the farm.
+- Launch the SQL Server Management Console and navigate to Security &gt;&gt; Logins. 
+- Select the SharePoint farm service account.
+- Click on Server Roles.
+- Ensure only public, dbcreator, and securityadmin roles are checked.
+- Remove checks from all other roles.</fixtext><fix id="F-65409r5_fix" /><check system="C-60689r5_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Review the SharePoint server configuration to ensure the farm service account (database access account) is configured with minimum privileges on the SQL server.
+
+- Launch the SQL Server Management Console and navigate to Security &gt;&gt; Logins. 
+- Select the SharePoint farm service account. 
+- Click on "Server Roles" and verify only public, dbcreator, and securityadmin are checked.
+- Click on "User Mapping" and verify that the farm account is a member of the public and db_owner role on each SharePoint database.
+
+Otherwise, this is a finding.</check-content></check></Rule></Group><Group id="V-60001"><title>SRG-APP-000062</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74431r1_rule" severity="medium" weight="10.0"><version>SP13-00-000170</version><title>The SharePoint setup account must be configured with the minimum privileges in Active Directory.</title><description>&lt;VulnDiscussion&gt;Separation of duties is a prevalent Information Technology control implemented at different layers of the information system including the operating system and in applications. It serves to eliminate or reduce the possibility that a single user may carry out a prohibited action. Separation of duties requires the person accountable for approving an action not be the same person who is tasked with implementing the action. 
+
+This requirement is intended to limit exposure due to user accounts being used to operate from within a privileged account or role. Limiting the access and permissions of privileged accounts to the minimum required, reduces exposure if the account is compromised and provides forensic history of activity when operating from these accounts.
+ 
+This policy limits the setup account privileges in AD.  However, default permissions for this account are configured by the SharePoint Products Configuration Wizard during product installation. This account is referred to during the installation as the "Database Access" account. By default, the account is used as the service account for the SharePoint Timer Service and the SharePoint Central Administration Web Site Application Pool. These settings should not be changed. Furthermore, this account should not be used as the service account for non-privileged services, applications, or application pools.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-65411r7_fix">Configure the SharePoint setup account to be configured with the minimum privileges in Active Directory.
+
+Ensure the Setup User domain user has minimum permissions in Active Directory. 
+- Using the AD DS console, navigate to “Active Directory Users and Computers” &gt;&gt; Users.
+- Double click on the account to view the account properties.
+- Select the “Members of” tab and configure the Setup user account is a member of the Domain Users group. Remove any other group membership from the account.
+- Select the other tabs in this area and remove any services or permissions configured for this account.</fixtext><fix id="F-65411r7_fix" /><check system="C-60691r7_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Review the SharePoint server configuration to ensure the setup account is configured with the minimum privileges in Active Directory.
+
+Verify the account has least privilege in Active Directory.
+- Navigate to “Active Directory Users and Computers” &gt;&gt; Users.
+- Double click on the account to view the account properties.
+- Select the “Members of” tab and verify this account is a member of the Domain Users group only.
+- Select the other tabs in this area to verify no other services or permissions are configured for this account.
+
+If the Setup User account is a member of other groups other than Domain Users, this is a finding.
+
+If the Setup User account has unneeded permissions or services assigned, this is a finding.</check-content></check></Rule></Group><Group id="V-60003"><title>SRG-APP-000062</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74433r2_rule" severity="medium" weight="10.0"><version>SP13-00-000175</version><title>The SharePoint setup account must be configured with the minimum privileges on the SQL server.</title><description>&lt;VulnDiscussion&gt;Separation of duties is a prevalent Information Technology control implemented at different layers of the information system including the operating system and in applications. It serves to eliminate or reduce the possibility that a single user may carry out a prohibited action. Separation of duties requires the person accountable for approving an action not be the same person who is tasked with implementing the action. 
+
+This requirement is intended to limit exposure due to user accounts being used to operate from within a privileged account or role. Limiting the access and permissions of privileged accounts to the minimum required, reduces exposure if the account is compromised and provides forensic history of activity when operating from these accounts. 
+This policy limits the Farm Account privileges in AD.  However, default permissions for this account are configured by the SharePoint Products Configuration Wizard during product installation. This account is referred to during the installation as the "Database Access" account. By default, the account is used as the service account for the SharePoint Timer Service and the SharePoint Central Administration Web Site Application Pool. These settings should not be changed. Furthermore, this account should not be used as the service account for non-privileged services, applications, or application pools.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-65413r5_fix">Configure the SharePoint setup account with minimum privileges on the SQL server.
+
+Configure the account on the SQL server.
+- Launch the SQL Server Management Console and navigate to Security &gt;&gt; Logins. 
+- Select the SharePoint Setup User account.
+- Click on "Server Roles".
+- Ensure only public, dbcreator, and securityadmin roles are checked.
+- Remove checks from all other roles.</fixtext><fix id="F-65413r5_fix" /><check system="C-60693r5_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>The SharePoint setup account must be configured with the minimum privileges on the SQL server.
+
+- Launch the SQL Server Management Console and navigate to Security &gt;&gt; Logins. 
+- Select the SharePoint Setup User account.
+- Click on "Server Roles" and verify only public, dbcreator, and securityadmin are checked.
+- Click on "User Mapping" and verify that the setup account is a member of the public and db_owner role on each SharePoint database.
+
+Otherwise, this is a finding.</check-content></check></Rule></Group><Group id="V-60005"><title>SRG-APP-000062</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74435r2_rule" severity="medium" weight="10.0"><version>SP13-00-000180</version><title>The SharePoint setup account must be configured with the minimum privileges for the local server.</title><description>&lt;VulnDiscussion&gt;Separation of duties is a prevalent Information Technology control implemented at different layers of the information system including the operating system and in applications. It serves to eliminate or reduce the possibility that a single user may carry out a prohibited action. Separation of duties requires the person accountable for approving an action not be the same person who is tasked with implementing the action. 
+
+This requirement is intended to limit exposure due to user accounts being used to operate from within a privileged account or role. Limiting the access and permissions of privileged accounts to the minimum required, reduces exposure if the account is compromised and provides forensic history of activity when operating from these accounts.
+
+This policy limits the setup account privileges in AD.  However, default permissions for this account are configured by the SharePoint Products Configuration Wizard during product installation. This account is referred to during the installation as the "Database Access" account. By default, the account is used as the service account for the SharePoint Timer Service and the SharePoint Central Administration Web Site Application Pool. These settings should not be changed. Furthermore, this account should not be used as the service account for non-privileged services, applications, or application pools.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-65415r5_fix">Configure the SharePoint setup account with the minimum privileges for the local server.
+
+- On the server(s) where the SharePoint software is installed, navigate to Server Manager -&gt; Local Users and Groups.
+- Select the “Member of” tab. 
+- Configure the SharePoint Setup User as a member of Administrators, WSS_ADMIN_WPG, and IIS_IUSRS groups.
+- Remove all other group memberships from this account. 
+- Select the other tabs in this area and remove other services or permissions configured for this account.</fixtext><fix id="F-65415r5_fix" /><check system="C-60695r5_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Review the SharePoint server configuration to ensure the setup account is configured with the minimum privileges for the local server.
+
+- On the server(s) where the SharePoint software is installed, navigate to Server Manager &gt;&gt; Local Users and Groups.
+- Select the “Member of” tab and verify this account is only a member of the Administrators, WSS_ADMIN_WPG, and IIS_IUSRS groups.
+- Select the other tabs in this area to verify no other services or permissions are configured for this account.
+
+If the Setup User account is a member of any other groups than Administrators, WSS_ADMIN_WPG, and IIS_IUSRS on the local server where SharePoint is installed, this is a finding.</check-content></check></Rule></Group><Group id="V-60007"><title>SRG-APP-000062</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74437r1_rule" severity="low" weight="10.0"><version>SP13-00-000185</version><title>A secondary SharePoint site collection administrator must be defined when creating a new site collection.</title><description>&lt;VulnDiscussion&gt;If a site reaches its maximum size, users will be denied access until an administrator fixes the problem. Having a secondary administrator reduces the risk of having a Denial-of-Service on a site. If the site reaches its maximum size, the secondary administrator can fix the problem if the primary administrator is not available. In some situations, having a secondary site administrator could be inappropriate for reasons of control or confidentiality.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-65417r1_fix">Configure a secondary SharePoint site collection administrator when creating a new site collection.
+
+Log on to SharePoint Central Administration as a member of the Farm Administration Group.
+
+Click on "Application Management".
+
+Select "Site Collections" &gt;&gt; Change Site Collections Administrator.
+
+For each site, define a Secondary Site Collection Administrator.
+
+Select "OK".</fixtext><fix id="F-65417r1_fix" /><check system="C-60697r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Review the SharePoint server to ensure a secondary site collection administrator is defined when creating a new site collection.
+
+Log on to SharePoint Central Administration as a member of the Farm Administration Group.
+
+Click on "Application Management".
+
+Select "Site Collections" &gt;&gt; Change Site Collections Administrator.
+
+For each Site Collections, review Secondary Site Collection Administrator.
+
+If Secondary Site Collection Administrator is not defined, this is a finding.</check-content></check></Rule></Group><Group id="V-60009"><title>SRG-APP-000142</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74439r2_rule" severity="medium" weight="10.0"><version>SP13-00-000190</version><title>When configuring SharePoint Central Administration, the port number selected must comply with DoD Ports and Protocol Management (PPSM) program requirements.</title><description>&lt;VulnDiscussion&gt;During the installation of Microsoft SharePoint, the Central Administration Web site is established on a randomly-assigned TCP port by default. Allowing a randomly-assigned default may result in use of a port which violates DoD policy or conflicts with ports already in use.  Use of certain well-known ports may also result in slow operational response or expose the application to known denial of service attacks.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000382</ident><fixtext fixref="F-65419r3_fix">Configure the SharePoint Central Administration port number selected to comply with DoD Ports and Protocol Management (PPSM) program requirements.
+
+Open the SharePoint Management Shell (Start &gt;&gt; All Programs &gt;&gt; Microsoft SharePoint Products &gt;&gt; SharePoint Management Shell). 
+
+Change the port number to a PPS-approved port that does not conflict with existing port usage using the following command: 
+Set -SPCentralAdministration -Port &lt;PortNumber&gt;
+
+Press "Enter" to save.</fixtext><fix id="F-65419r3_fix" /><check system="C-60699r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Review the SharePoint server Central Administration configuration to ensure the port number selected complies with DoD Ports and Protocol Management (PPSM) program requirements.
+
+Open the SharePoint Management Shell (Start &gt;&gt; All Programs &gt;&gt; Microsoft SharePoint Products &gt;&gt; SharePoint Management Shell). 
+
+Type the following command at the PowerShell prompt:
+Get-SPWebApplication -IncludeCentralAdministration
+
+Find the entry for the Central Administration web application and verify the port listed in the URL column is allowed by the DoD PPSM policy.
+
+If the port number is not allowed in accordance with DoD PPSM policy, this is a finding.</check-content></check></Rule></Group><Group id="V-60011"><title>SRG-APP-000208</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74441r1_rule" severity="medium" weight="10.0"><version>SP13-00-000195</version><title>SharePoint-specific malware (i.e. anti-virus) protection software must be integrated and configured.</title><description>&lt;VulnDiscussion&gt;Configuring anti-virus settings ensures documents will be scanned for viruses upon download from and upload to the SharePoint server. Anti-virus settings are not configured by default, therefore leaving the documents downloaded from or uploaded to SharePoint open to potential viruses.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-001167</ident><fixtext fixref="F-65421r2_fix">Configure and integrate SharePoint-specific malware (i.e. anti-virus) protection software on the SharePoint server.
+
+Install and configure anti-virus package.
+
+Install a SharePoint Server 2010-specific antivirus package. 
+
+Log in to Central Administration.
+
+Navigate to Operations &gt;&gt; Security Configuration.
+
+Select Anti-virus.
+
+Check the following boxes:
+- Scan documents on upload.
+- Scan documents on download.
+- Attempt to clean infected documents.
+
+Select "OK".</fixtext><fix id="F-65421r2_fix" /><check system="C-60701r1_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Review the SharePoint server configuration to ensure SharePoint-specific malware (i.e. anti-virus) protection software is integrated and configured.
+
+Log on to Central Administrator.
+
+Navigate to Operations &gt;&gt; Security Configuration.
+
+Select Anti-virus.
+
+If any of the following boxes are unselected, this is a finding:
+- Scan documents on upload.
+- Scan documents on download.
+- Attempt to clean infected documents.</check-content></check></Rule></Group><Group id="V-60391"><title>SRG-APP-000062</title><description>&lt;GroupDescription&gt;&lt;/GroupDescription&gt;</description><Rule id="SV-74821r1_rule" severity="medium" weight="10.0"><version>SP13-00-000210</version><title>The SharePoint farm service account (database access account) must be configured with the minimum privileges for the local server.</title><description>&lt;VulnDiscussion&gt;Separation of duties is a prevalent Information Technology control implemented at different layers of the information system including the operating system and in applications. It serves to eliminate or reduce the possibility that a single user may carry out a prohibited action. Separation of duties requires the person accountable for approving an action not be the same person who is tasked with implementing the action. 
+
+This requirement is intended to limit exposure due to user accounts being used to operate from within a privileged account or role. Limiting the access and permissions of privileged accounts to the minimum required, reduces exposure if the account is compromised and provides forensic history of activity when operating from these accounts. 
+This policy limits the Farm Account privileges in AD.  However, default permissions for this account are configured by the SharePoint Products Configuration Wizard during product installation. This account is referred to during the installation as the “Database Access” account. By default, the account is used as the service account for the SharePoint Timer Service and the SharePoint Central Administration Web Site Application Pool. These settings should not be changed. Furthermore, this account should not be used as the service account for non-privileged services, applications, or application pools.&lt;/VulnDiscussion&gt;&lt;FalsePositives&gt;&lt;/FalsePositives&gt;&lt;FalseNegatives&gt;&lt;/FalseNegatives&gt;&lt;Documentable&gt;false&lt;/Documentable&gt;&lt;Mitigations&gt;&lt;/Mitigations&gt;&lt;SeverityOverrideGuidance&gt;&lt;/SeverityOverrideGuidance&gt;&lt;PotentialImpacts&gt;&lt;/PotentialImpacts&gt;&lt;ThirdPartyTools&gt;&lt;/ThirdPartyTools&gt;&lt;MitigationControl&gt;&lt;/MitigationControl&gt;&lt;Responsibility&gt;&lt;/Responsibility&gt;&lt;IAControls&gt;&lt;/IAControls&gt;</description><reference><dc:title>DPMS Target SharePoint Server 2013</dc:title><dc:publisher>DISA</dc:publisher><dc:type>DPMS Target</dc:type><dc:subject>SharePoint Server 2013</dc:subject><dc:identifier>2801</dc:identifier></reference><ident system="http://iase.disa.mil/cci">CCI-000366</ident><fixtext fixref="F-66047r2_fix">Configure the SharePoint farm service account (database access account) with the minimum privileges for the local server.
+
+- On the server(s) where the SharePoint software is installed, navigate to Server Manager &gt;&gt; Local Users and Groups.
+- Select the “Member of” tab. Configure the farm service account as a member of WSS_RESTRICTED_WPG, WSS_ADMIN_WPG, and WSS_WPG groups. Remove all other group memberships from this account. 
+- Select the other tabs in this area and remove other services or permissions configured for this account.</fixtext><fix id="F-66047r2_fix" /><check system="C-61357r2_chk"><check-content-ref name="M" href="DPMS_XCCDF_Benchmark_Sharepoint_2013_STIG.xml" /><check-content>Review the SharePoint server configuration to ensure the farm service account (database access account) is configured with the minimum privileges for the local server.
+
+- On the server(s) where the SharePoint software is installed, navigate to Server Manager &gt;&gt; Local Users and Groups.
+- Select the “Member of” tab and verify this account is only a member of the WSS_RESTRICTED_WPG, WSS_ADMIN_WPG, and WSS_WPG groups.
+- Select the other tabs in this area to verify no other services or permissions are configured for this account.
+
+If the farm service account is a member of any other groups than WSS_RESTRICTED_WPG, WSS_ADMIN_WPG, and WSS_WPG on the local server where SharePoint is installed, this is a finding.</check-content></check></Rule></Group></Benchmark>

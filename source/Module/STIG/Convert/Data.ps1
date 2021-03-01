@@ -50,6 +50,7 @@ data dscResourceModule
         VsphereSnmpAgentRule                 = Vmware.vSphereDSC
         VsphereNtpSettingsRule               = Vmware.vSphereDSC
         VsphereVssSecurityRule               = Vmware.vSphereDSC
+        SPWebAppGeneralSettingsRule          = SharePointDsc
         nxFileLineRule                       = nx
         nxFileRule                           = nx
         nxPackageRule                        = nx

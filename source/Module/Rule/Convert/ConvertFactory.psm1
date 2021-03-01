@@ -17,6 +17,7 @@ using module .\..\..\Rule.ProcessMitigation\Convert\ProcessMitigationRule.Conver
 using module .\..\..\Rule.Registry\Convert\RegistryRule.Convert.psm1
 using module .\..\..\Rule.SecurityOption\Convert\SecurityOptionRule.Convert.psm1
 using module .\..\..\Rule.Service\Convert\ServiceRule.Convert.psm1
+using module .\..\..\Rule.SPWebAppGeneralSettings\Convert\SPWebAppGeneralSettingsRule.Convert.psm1
 using module .\..\..\Rule.SqlScriptQuery\Convert\SqlScriptQueryRule.Convert.psm1
 using module .\..\..\Rule.UserRight\Convert\UserRightRule.Convert.psm1
 using module .\..\..\Rule.WebAppPool\Convert\WebAppPoolRule.Convert.psm1
@@ -210,6 +211,12 @@ class ConvertFactory
                     [SplitFactory]::XccdfRule($Rule, 'ServiceRuleConvert', 'ServiceName')
                 )
             }
+            {[SPWebAppGeneralSettingsRuleConvert]::Match($PSItem)}
+            {
+                $null = $ruleTypeList.Add(
+                    [SPWebAppGeneralSettingsRuleConvert]::new($Rule).AsRule()
+                )
+            }
             {[SqlScriptQueryRuleConvert]::Match($PSItem)}
             {
                 $null = $ruleTypeList.Add(
@@ -377,7 +384,6 @@ class ConvertFactory
                 {
                     $convertedrule.LegacyId = "$($convertedrule.LegacyId).$([CHAR][BYTE]$byte)"
                 }
-
                 $byte ++
             }
         }

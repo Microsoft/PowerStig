@@ -42,6 +42,7 @@ using module .\Module\Rule.VsphereSnmpAgent\Convert\VsphereSnmpAgentRule.Convert
 using module .\Module\Rule.VsphereKernelActiveDumpPartition\Convert\VsphereKernelActiveDumpPartitionRule.Convert.psm1
 using module .\Module\Rule.VsphereNtpSettings\Convert\VsphereNtpSettingsRule.Convert.psm1
 using module .\Module\Rule.VsphereVssSecurity\Convert\VsphereVssSecurityRule.Convert.psm1
+using module .\Module\Rule.SPWebAppGeneralSettings\Convert\SPWebAppGeneralSettingsRule.Convert.psm1
 using module .\Module\Rule.nxPackage\Convert\nxPackageRule.Convert.psm1
 using module .\Module\Rule.nxService\Convert\nxServiceRule.Convert.psm1
 using module .\Module\Rule.nxFileLine\Convert\nxFileLineRule.Convert.psm1
