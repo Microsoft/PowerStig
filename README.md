@@ -23,7 +23,7 @@ or comments.
 
 ## Released Module
 
-To see the released PowerStig module, go to the [PowerShell Gallery](https://www.powershellgallery.com/packages/PowerSTIG). We recommend that you use PowerShellGet to install PowerStig:
+To see the released PowerStig module, go to the [PowerShell Gallery](https://www.powershellgallery.com/items?q=powerstig&x=19&y=15). We recommend that you use PowerShellGet to install PowerStig:
 
 For example:
 
