@@ -35,6 +35,7 @@ using module .\..\Rule.nxFileLine\nxFileLineRule.psm1
 using module .\..\Rule.nxFile\nxFileRule.psm1
 using module .\..\Rule.RootCertificate\RootCertificateRule.psm1
 using module .\..\Rule.SqlServerConfiguration\SqlServerConfigurationRule.psm1
+using module .\..\Rule.PowerShellScriptQuery\PowerShellScriptQueryRule.psm1
 #header
 
 class LoadFactory
@@ -81,6 +82,7 @@ class LoadFactory
             'nxFileRule'                           {$return = [nxFileRule]::new($Rule)}
             'RootCertificateRule'                  {$return = [RootCertificateRule]::new($Rule)}
             'SqlServerConfigurationRule'           {$return = [SqlServerConfigurationRule]::new($Rule)}
+            'PowerShellScriptQueryRule'            {$return = [PowerShellScriptQueryRule]::new($Rule)}
         }
 
         return $return

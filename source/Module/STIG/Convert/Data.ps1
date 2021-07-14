@@ -55,5 +55,6 @@ data dscResourceModule
         nxPackageRule                        = nx
         nxServiceRule                        = nx
         SqlServerConfigurationRule           = SqlServerDsc
+        PowerShellScriptQueryRule            = PSDscResources
 '@
 }
